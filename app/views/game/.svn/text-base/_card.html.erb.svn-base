@@ -1,0 +1,7 @@
+<% @count = @count +1 %>
+<% id = @count %>
+
+<%= image_tag card.image_front_url, :id => id, :class => "game-card" %>
+
+<%= make_draggable id %>
+<%= create_floating_tooltip id.to_s, card.image_front_url.to_s %>

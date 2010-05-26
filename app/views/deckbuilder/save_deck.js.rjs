@@ -1,0 +1,5 @@
+page.replace_html("sixtyfirst_cards", :partial => "sixtyfirst_cards", :object => @decklist)
+page.replace_html("side_deck", :partial => "side_deck", :object => @decklist)
+page.replace_html("main_deck", :partial => "main_deck", :object => @decklist)
+page.replace_html("deck_details", :partial => "deck_details")
+page.replace_html("decklist_total", "Total (#{@decklist.total_quantity})")

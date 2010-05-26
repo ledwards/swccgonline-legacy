@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+* html body{  overflow:hidden; } 
+
+a { font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; text-decoration: none; }
+a:hover { color: #ffde71;}
+img { border: none }
+body { background: #1b1b1b; padding-top: 4px;}
+#container { width: 98%; margin: 0 auto 0 auto; padding-top: 75px; }
+#log-in {background: url(/images/stars.jpg); font-size: 1em; text-align: center; vertical-align: middle; }
+h1,h2 { font: 24px/24px Arial, Helvetica, sans-serif; color: #ffde71; letter-spacing: -1px; font-weight: 700; }
+
+@media screen{
+	body>div#header{
+		position:fixed;
+	}
+}
+
+#header {background: url(/images/bg.jpg) top left repeat-x; width: 100%; position: relative; top: 4; left: 0; height: 50px; z-index: 100;}
+#logo {height: 39px; position: absolute; top: 0; left:00px; width: 500px; background: url(/images/logo.jpg) no-repeat}
+#logo a { width: 100%; height: 39px; display: block; }
+#nav { height: 20px; position: absolute; top: 9px; right: 0px; width: 500px; text-align: right; font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffde71; }
+#nav ul, #account ul { display: inline; }
+#nav ul li, #account ul li { list-style:none; display: inline; margin-right: 10px; }
+#nav ul li a { 	color: #ffde71; text-decoration: none; padding: 13px 9px; }
+#nav ul li a:hover, #nav ul li.here a, #nav ul li.here a:hover { background: url(/images/whiteoverlay.png) top center repeat-x; color: #fff;}
+ 
+@media screen{
+body>div#account{
+position:fixed;}
+ }
+
+#account {
+	width: 100%;
+	height: 28px;
+	font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif;
+	color:#898989;
+	text-align: right;
+	position: absolute;
+	right: 0px;
+	background: #131313;
+	border-top: 1px solid #262626;
+	bottom: 0px;
+	z-index: 99;
+}
+#account ul { width: auto; height: 24px; margin-top: 5px; float: right;}
+#account ul li {margin-right: 17px;}
+#account ul li a { color: #bdbdbd; text-decoration: none;  }
+#account ul li a:hover { color: #FFFFFF }
+
+#notice { float: right; width: auto; padding: 7px 12px 0 12px; background: #458293; color: #FFFFFF; height: 28px; border-left: 1px solid #437785; border-right: 1px solid #437785;  border-top: 2px solid #83c3d4; margin-top: -4px; margin-right: 20px; font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; position: relative; }
+
+#wrapper {
+	position: absolute;
+	top: 60px;
+	width: auto; padding: 0 25px;
+}
+
+input.button { border: none; background: url(/images/button.png) 0px 0px no-repeat; font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	font-size: 12px; color: #fad575;  padding-bottom: 7px; text-align: center; height:30px; width: 84px; vertical-align: middle; }
+input.button:hover { background-position: 0px -29px; color: #fff; cursor: pointer; }
+
+/* Gamer Card */
+.gamer-card { padding: 10px 0; }
+.gamer-card img {
+	position: absolute;
+	right: 0px;
+	top: 28px;}
+.gamer-card p {
+	margin: -7px 12px 0 3px;
+	text-align: left;
+	font: 11px/21px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif;
+	color:#FFFFFF}
+.gamer-card strong { margin-right: 8px; color: #ffde71 }
+.title { font: 9px/16px 'Lucida Grande','Lucida Sans Unicode',Verdana, sans-serif; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; color: #ffde71; !important }
+.hidden { display: none;  }
+.close { height: 19px !important; margin-top: -1px; }
+
+ul li { list-style-type: none; margin: 5px; }
+ul.ajaxful-rating li { margin: 0px; }
+
+span.disabled { font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #898989; text-decoration: none; }
+span.current { font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffde71; text-decoration: none; }
+span.gap { font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #898989; text-decoration: none; }
+
+.qtip-title { font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #898989; text-decoration: none; }
+.qtip-title a { font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; text-decoration: none; }
+.qtip-title a:hover { color: #ffde71;}
+.qtip-content {  }
+
+div.footer_padding { margin-bottom: 50px; }
+
+div.errors h2 { font: 24px/24px Arial, Helvetica, sans-serif; color: #ffde71; letter-spacing: -1px; font-weight: 700; }
+div.errors p, div.errors li { font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; list-style: none; }
+
+div.errorExplanation li { margin: 10px; font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; list-style: disc; }
+div.errorExplanation p { margin: 10px; font: 14px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ff3333; }
+div.errorExplanation h2 { margin: 10px; font: 18px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ff3333; }

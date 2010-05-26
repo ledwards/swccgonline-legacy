@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test
+END
+paperclip_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/paperclip_test.rb
+END
+processor_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/processor_test.rb
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/helper.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/database.yml
+END
+integration_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/integration_test.rb
+END
+iostream_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/iostream_test.rb
+END
+thumbnail_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/thumbnail_test.rb
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/.gitignore
+END
+storage_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/storage_test.rb
+END
+attachment_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/attachment_test.rb
+END
+interpolations_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/interpolations_test.rb
+END
+geometry_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/test/geometry_test.rb
+END

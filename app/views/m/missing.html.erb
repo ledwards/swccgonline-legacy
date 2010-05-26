@@ -1,0 +1,21 @@
+<div id="graphic">
+	<%= image_tag "/images/uhoh.gif" %>
+</div>
+<div id="notice">
+	<p><%= flash[:notice] %></p>
+</div>
+<div class="container">
+	<div class="left">
+		<%= image_tag "/images/icestorm.png" %>
+	</div>
+
+	<div class="right">
+		<p>The page you requested is not available. Please check the URL and try again.</p>
+		<br />
+		<p class="important">Error 404: Not Found</p>
+		<br />
+		<p>Follow <%= link_to "this link", :controller => "launch", :action => "index" %> back to safe territory.</p>
+	</div>
+</div>
+
+<%= javascript_tag "$('div.left, div.right').corner();" %>

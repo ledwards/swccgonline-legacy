@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/s_terron/swccgonline/!svn/ver/28/trunk/app/views/launch
+END
+_header.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/s_terron/swccgonline/!svn/ver/7/trunk/app/views/launch/_header.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/s_terron/swccgonline/!svn/ver/28/trunk/app/views/launch/index.html.erb
+END
+_news_item.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/s_terron/swccgonline/!svn/ver/28/trunk/app/views/launch/_news_item.html.erb
+END
+_footer.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/s_terron/swccgonline/!svn/ver/28/trunk/app/views/launch/_footer.html.erb
+END
+_gamer_card.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/s_terron/swccgonline/!svn/ver/25/trunk/app/views/launch/_gamer_card.html.erb
+END

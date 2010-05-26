@@ -1,0 +1,6 @@
+if @applied_card_filters.index @card_filter #If filter being modified is in the applied section
+  page.replace("card_filter_"+@card_filter.id.to_s, :partial => "applied_card_filter", :object => @card_filter )
+  page.replace_html("search_results", :partial => "search_results")
+else
+  page.replace("card_filter_"+@card_filter.id.to_s, :partial => "saved_card_filter", :object => @card_filter )
+end

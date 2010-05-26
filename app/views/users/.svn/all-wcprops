@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/s_terron/swccgonline/!svn/ver/38/trunk/app/views/users
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/s_terron/swccgonline/!svn/ver/37/trunk/app/views/users/index.html.erb
+END
+send_reset_password.rjs.js
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/s_terron/swccgonline/!svn/ver/34/trunk/app/views/users/send_reset_password.rjs.js
+END
+_errors.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/s_terron/swccgonline/!svn/ver/28/trunk/app/views/users/_errors.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/s_terron/swccgonline/!svn/ver/38/trunk/app/views/users/show.html.erb
+END
+update.rjs.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/s_terron/swccgonline/!svn/ver/33/trunk/app/views/users/update.rjs.js
+END
+change_settings_panel.rjs.js
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/s_terron/swccgonline/!svn/ver/33/trunk/app/views/users/change_settings_panel.rjs.js
+END
+_signup_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/s_terron/swccgonline/!svn/ver/31/trunk/app/views/users/_signup_form.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/s_terron/swccgonline/!svn/ver/26/trunk/app/views/users/new.html.erb
+END
+_account.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/s_terron/swccgonline/!svn/ver/33/trunk/app/views/users/_account.html.erb
+END
+_profile.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/s_terron/swccgonline/!svn/ver/33/trunk/app/views/users/_profile.html.erb
+END
+settings.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/s_terron/swccgonline/!svn/ver/37/trunk/app/views/users/settings.html.erb
+END
+create.rjs.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/s_terron/swccgonline/!svn/ver/26/trunk/app/views/users/create.rjs.js
+END
+_application.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/s_terron/swccgonline/!svn/ver/33/trunk/app/views/users/_application.html.erb
+END
+_reset_password.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/s_terron/swccgonline/!svn/ver/34/trunk/app/views/users/_reset_password.html.erb
+END
+reset_password.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/s_terron/swccgonline/!svn/ver/34/trunk/app/views/users/reset_password.html.erb
+END

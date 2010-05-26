@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/lib
+END
+activerecord_test_connector.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/lib/activerecord_test_connector.rb
+END
+activerecord_test_case.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/lib/activerecord_test_case.rb
+END
+view_test_process.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/lib/view_test_process.rb
+END
+load_fixtures.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/lib/load_fixtures.rb
+END

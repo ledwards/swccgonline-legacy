@@ -1,0 +1,31 @@
+<div id="container">
+	<div class="left">
+		<h1>Recent Games</h1>
+		<ul>
+			<li>Coming soon.</li>
+		</ul>
+	</div>
+	<div class="right">
+		<h1>Recent Content</h2>
+		<ul>
+			<% @recent_posts.each do |post| %>
+				<li>
+					<%= link_to post.title, :controller => "posts", :action => post.id %>
+					by <%= link_to post.user_name, :controller => "profiles", :action => post.user.login %>
+					<%=h post.rating_average.to_f %><br/>
+					on <%=h post.created_at.to_date %>
+				</li>
+			<% end %>
+		</ul>
+	</div>
+</div>
+
+<div class="center">
+	<div id="news">
+		<%= render :partial => "news_item", :collection => @news %>
+		<div id="more_news">
+			<%= link_to "[More]", :controller => "blogs", :action => "admin" %>
+		</div>
+	</div>
+</div>
+

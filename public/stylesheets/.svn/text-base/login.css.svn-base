@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+* html #container{height:100%;}
+
+a {color: #ffffff; text-decoration: none; }
+a:hover { color: #ffde71;}
+body { background: url(/images/stars.jpg); font-size: 1em; text-align: center; vertical-align: middle; z-index: -3}
+#logo { margin: 6% auto 0 auto; display: block; z-index: 5}
+.hidden {display: none;}
+#login { margin: 55px auto 0 auto; display: block; z-index: 5; width: 300px; text-align: center;  }
+#login input.field, #signup input.field, #reset_password input.field { width: 222px; height: 27px;  margin: 0 auto 10px auto; background: url(/images/login_box_bg.png) top left no-repeat; text-align: center; font: 10px "Lucida Grande", "Lucida Sans Unicode", Verdana; color: #CCCCCC; letter-spacing: 1px; overflow: hidden; padding: 6px 0; display:block; border: none;}
+input.button { border: none; background: url(/images/button.png) 0px 0px no-repeat; font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	font-size: 12px; color: #fad575;  padding-top: 5px; text-align: center; height:30px; width: 84px; padding-bottom: 8px;clear: both; margin-bottom: 10px;}
+input.button:hover { background-position: 0px -29px; color: #fff; cursor: pointer; }
+input.button:active { background-position: 0px -58px; color: #fff; cursor: pointer; }
+#login label, #signup label { display: none; }
+.loginbutton {
+	position: absolute;
+	left: 155px;
+	top: 315px;
+}
+
+#planet { width: 100%; height: 280px; position: absolute; bottom: 0px; left: 0px; background: url(/images/planet.png) center bottom no-repeat; z-index: -1;}
+#new { width: 400px; height: 23px; background: url(/images/login_more.png) top center no-repeat; z-index: 3; text-align: center; font: 11px "Lucida Grande", "Lucida Sans Unicode", Verdana; color: #ffde71;  padding-top: 6px; margin: 0 auto; }
+#new a {margin-left: 5px;}
+#sun {position: absolute; top: 0; right: 0; width: 446px; height: 282px; background: url(/images/sun.png) top right no-repeat; z-index: -1;}
+
+@media screen{
+  body>div#footer, body>div#footer2{
+   position:fixed;
+  }
+}
+
+div#signup {background: #1b1b1b; width: 400px;}
+div#signup h1 { margin-bottom: 10px; font: 24px/24px Arial, Helvetica, sans-serif; color: #ffde71; letter-spacing: -1px; font-weight: 700; }
+div#signup a { font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; text-decoration: none; }
+div#signup a:hover { color: #ffde71;}
+#signup label { display: none; }
+
+div.errors h2 { font: 18px Arial, Helvetica, sans-serif; color: #ffde71; letter-spacing: -1px; font-weight: 700; }
+div.errors p { font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; }
+div.errors li { list-style: none; font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ff2c2c; }
+div#signup_errors { margin-bottom: 10px; margin-top: 10px; }
+div#login_errors { margin-bottom: 20px; margin-top: -40px; height: 20px; }
+div.notice { margin-bottom: 20px; margin-top: -40px; height: 20px; }
+div.notice p { font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; }
+
+.reset_password { width: 400px; margin: 0 auto; }
+.qtip-wrapper div.button_container { width: 80px; position: absolute; margin-top: -3px; margin-right: 10px; margin-left: 240px; }
+.qtip-wrapper input.field { width: 222px; height: 27px;  margin: 0 auto 10px auto; background: url(/images/login_box_bg.png) top left no-repeat; text-align: center; font: 10px "Lucida Grande", "Lucida Sans Unicode", Verdana; color: #CCCCCC; letter-spacing: 1px; padding: 6px 0; display:inline; border: none; float: left; }
+.qtip-wrapper input.button { display: inline; float: right; margin-right: 10px; }
+.qtip-title { font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #898989; text-decoration: none; }
+.qtip-title a { font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; text-decoration: none; }
+.qtip-title a:hover { color: #ffde71;}
+.qtip-content { font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #898989; text-decoration: none; }
+.qtip-content label { display: none; }

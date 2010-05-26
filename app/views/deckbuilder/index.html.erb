@@ -1,0 +1,49 @@
+<%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? -%>
+
+<div id="container">
+  <div class="left">
+		<div class="side">
+			<%= image_tag "/images/#{@side.downcase}side.png", :id => "side_graphic" %>
+			<p>
+			 <%= link_to_remote "[Change sides]", :url => {:controller => "deckbuilder", :action => "change_sides"} %>
+			</p>
+		</div>
+    <div class="card_filters">
+      <h1>Search filters</h1>
+      <div>
+				<h3>Applied Filters</h3>
+        <%= render :partial => "applied_card_filters" %>
+      </div>
+			<h3>Use a Saved Filter</h3>
+      <div>
+        <%= render :partial => "saved_card_filters" %>
+      </div>
+      <div>
+        <%= render :partial => "new_card_filter" %>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="decklist">
+      <h1 id="deck_title_header"><%= @deck.title %></h1>
+			<h3>Decklist</h3>
+			<div id="decklist">
+	  		<%= render :partial => "decklist", :object => @decklist %>
+			</div>
+			<h3>Details</h3>
+			<div id="deck_details">
+				<%= render :partial => "deck_details" %>
+			</div>
+    </div>
+  </div>
+</div>
+<div class="center">
+	<div class="search-box">
+	  <% form_remote_tag :url => { :action => "search" } do %>
+	    <%= text_field :card, :title, {:size => 50} %>
+	    <%= submit_tag "Search", :class => "button" %>
+	  <% end %>
+	</div>  
+	<%= render :partial => "search_results" %>
+	<br /><br />
+</div>

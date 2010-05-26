@@ -1,0 +1,19 @@
+<div class="news_item">
+	<h2>
+		<%= news_item.title %>
+	</h2>
+	<h3>
+		Posted on <%= news_item.created_at.to_date %>
+		by <%= link_to news_item.user_name, :controller => "profiles", :action => news_item.user.login %>
+	</h3>
+	<p>
+		<%= news_item.body %>
+	</p>
+	<div class="news_item_comments">
+		<% if news_item.comments.empty? %>
+			<%= link_to "No comments yet", :controller => "blog_posts", :action => "show", :id => news_item.id %>
+		<% else %>
+			<%= link_to news_item.comments.count.to_s + " Comments", :controller => "blog_posts", :action => "show", :id => news_item.id %>
+		<% end %>
+	</div>
+</div>

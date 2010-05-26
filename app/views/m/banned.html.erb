@@ -1,0 +1,23 @@
+<div id="graphic">
+	<%= image_tag "/images/gtfo.gif" %>
+</div>
+<div id="notice">
+	<p><%= flash[:notice] %></p>
+</div>
+<div class="container">
+	<div class="left">
+		<%= image_tag "/images/fallofajedi.png" %>
+	</div>
+
+	<div class="right">
+		<p>You have been banned, because you are a piece of shit.</p>
+		<br />
+		<p>Continued attempts to circumvent site terms of use will result in a ban of your entire ISP, city, state, region, or country.</p>
+		<br />
+		<p class="important">Your personal information, including your IP address and present location have been logged.</p>
+		<br />
+		<p>Don't fuck with me.</p>
+	</div>
+</div>
+
+<%= javascript_tag "$('div.left, div.right').corner();" %>

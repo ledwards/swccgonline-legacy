@@ -1,0 +1,45 @@
+<div id="container">
+	<div class="right" id="blogs_right">
+		<h1>Most Popular Blogs</h1>
+		<ol>
+			<% Post.top_n_blog_owners(5).each do |owner| %>
+				<li><%= link_to owner.blog_title, :controller => "blogs", :action => owner.login %></li>
+			<% end %>
+		</ol>
+	</div>
+<!-->
+	<div class="right">
+		<h1>Tags</h1>
+		<div class="tag_cloud">
+			<% tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| %>
+			  <%= link_to tag.name, { :controller => "blogs", :action => "tags", :id => tag.name }, :class => css_class %>
+			<% end %>
+		</div>
+	</div>
+<!-->
+</div>
+
+<div class="center" id="blogs">
+	<div id ="your_blog_listing">
+		<ul>
+			<% if @current_user.blog_posts.empty? %>
+				<li><h2>You have not posted to your blog yet.</h2></li>
+			<% else %>
+				<%= render :partial => "blog_listing", :locals => {:user => @current_user} %>
+			<% end %>
+			<li id="create"><%= link_to "Create a new blog entry", :controller => "blog_posts", :action => "new" %></li>		
+		</ul>
+	</div>
+	<ul class="blog_posts">
+		<% @users.each do |user| %>
+			<% if !user.blog_posts.empty? and user != @current_user %>
+				<%= render :partial => "blog_listing", :locals => {:user => user} %>
+			<% end %>
+		<% end %>
+		<li>
+			<div class="footer_padding"></div>
+		</li>
+	</ul>
+</div>
+
+<%= javascript_tag "$('div#your_blog_listing').corner();" %>

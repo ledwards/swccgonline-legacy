@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip
+END
+paperclip.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/paperclip.gemspec
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/README.rdoc
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/paperclip/init.rb
+END

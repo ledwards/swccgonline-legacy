@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/helper.rb
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/console
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/database.yml
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/boot.rb
+END
+tasks.rake
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/tasks.rake
+END
+finder_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/finder_test.rb
+END
+view_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/view_test.rb
+END
+collection_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/test/collection_test.rb
+END

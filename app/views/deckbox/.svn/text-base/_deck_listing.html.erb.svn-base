@@ -1,0 +1,12 @@
+<div class="deck_listing">
+	<%= image_tag deck_listing.side + ".gif" %>
+	<p>
+		<%= link_to deck_listing.title, :controller => "deckbuilder", :action => "index", :id => deck_listing.id %> (W/L/D) <%= deck_listing.created_on_date %>
+	</p>
+	<p>
+		<%= deck_listing.shortened_description %>
+	</p>
+	<p>
+		EDIT | DELETE | SHARE | CLONE | EXPORT
+	</p>
+</div>

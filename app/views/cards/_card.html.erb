@@ -1,0 +1,48 @@
+<div class="card">
+  <p>
+    <strong><h2><%= card.uniqueness %><%= card.title %></h2></strong>
+  </p>
+  
+  <p>
+    <%= image_tag card.image_front_url %>
+    <%= image_tag card.image_back_url %>
+  </p>
+  
+  <p>
+    <strong>Expansion:</strong>
+    <%=h card.expansion %> [<%=h card.rarity %>]
+  </p>
+  
+  <% if card.lore %>
+    <p>
+      <strong>Lore:</strong>
+      <%= card.lore %>
+    </p>
+  <% end %>
+  
+  <p>
+    <strong>Type:</strong>
+    <%=h card.type_and_subtype %>
+  </p>
+  
+  <p>
+    <% for a in card.card_attributes %>
+      <strong><%= a.name %></strong>: <%= a.value.to_s %>
+    <% end %>
+  </p>
+  
+  <p>
+    <strong>Game Text:</strong>
+    <%= card.gametext %>
+  </p>
+  
+  <% if not card.card_characteristics.empty? %>
+    <p>
+      <strong>Characteristics:</strong>
+      <%= card.card_characteristics.collect{|c| c.name}.join(", ") %>
+    </p>
+  <% end %>
+  
+  <%= link_to 'Edit', edit_card_path(card) %> |
+  <%= link_to 'Back', cards_path %>
+</div>

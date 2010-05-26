@@ -1,0 +1,17 @@
+<div id="container">
+	<div class="left">
+		<h1>Settings</h1>
+		<ul id="left_nav">
+			<li><%= link_to_remote "Account", :url => {:controller => "change_settings_panel", :settings_panel => "account"} %></li>
+			<li><%= link_to_remote "Profile", :url => {:controller => "change_settings_panel", :settings_panel => "profile"} %></li>
+			<li><%= link_to_remote "Application Settings", :url => {:controller => "change_settings_panel", :settings_panel => "application"} %></li>
+		</ul>
+	</div>
+	<div class="errors" id="settings_errors">
+	</div>
+</div>
+	
+<div class="center" id="settings_center">
+	<div id="settings_content">
+	</div>
+</div>

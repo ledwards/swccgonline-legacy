@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/s_terron/swccgonline/!svn/ver/25/trunk/test/functional
+END
+cards_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/s_terron/swccgonline/!svn/ver/1/trunk/test/functional/cards_controller_test.rb
+END
+deckbuilder_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/1/trunk/test/functional/deckbuilder_controller_test.rb
+END
+deckbox_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/s_terron/swccgonline/!svn/ver/1/trunk/test/functional/deckbox_controller_test.rb
+END
+users_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/s_terron/swccgonline/!svn/ver/5/trunk/test/functional/users_controller_test.rb
+END
+community_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/s_terron/swccgonline/!svn/ver/7/trunk/test/functional/community_controller_test.rb
+END
+comments_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/s_terron/swccgonline/!svn/ver/7/trunk/test/functional/comments_controller_test.rb
+END
+sessions_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/s_terron/swccgonline/!svn/ver/5/trunk/test/functional/sessions_controller_test.rb
+END
+blogs_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/s_terron/swccgonline/!svn/ver/25/trunk/test/functional/blogs_controller_test.rb
+END
+messages_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/s_terron/swccgonline/!svn/ver/14/trunk/test/functional/messages_controller_test.rb
+END
+posts_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/s_terron/swccgonline/!svn/ver/7/trunk/test/functional/posts_controller_test.rb
+END
+login_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/s_terron/swccgonline/!svn/ver/1/trunk/test/functional/login_controller_test.rb
+END
+game_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/s_terron/swccgonline/!svn/ver/1/trunk/test/functional/game_controller_test.rb
+END

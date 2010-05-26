@@ -1,0 +1,4 @@
+<div id="sixtyfirst_cards_contents">
+	<%= render :partial => "sixtyfirst_cards_item", :collection => sixtyfirst_cards.find_all_by_tab("sixtyfirst_cards") %>
+	<p class="total">Subtotal (<%= sixtyfirst_cards.quantity_by_tab("sixtyfirst_cards") %>)</p>
+</div>

@@ -1,0 +1,9 @@
+page.replace("search_results", :partial => "search_results")
+page.visual_effect(:fade, "card_filter_"+@card_filter.id.to_s, :duration => 0.5)
+page.delay(0.5) {
+  page.remove("card_filter_"+@card_filter.id.to_s)
+  page.replace("applied_card_filters", :partial => "applied_card_filters", :object => @applied_card_filters)
+  page.replace("saved_card_filters", :partial => "saved_card_filters", :object => @saved_card_filters)
+  page.hide("card_filter_"+@card_filter.id.to_s)
+  page.visual_effect(:appear, "card_filter_"+@card_filter.id.to_s, :duration => 0.5)
+}

@@ -1,0 +1,24 @@
+<div id="container">
+	<div class="right">
+		<h1>Blog Entries</h1>
+		<ul>
+			<% @posts.each do |post| %>
+				<li>
+					<%= link_to post.title, :controller => "blog_posts", :action => "show", :id => post.id %>
+				</li>
+			<% end %>
+		</ul>
+		<% if @user == @current_user %>
+			<div id="blog_admin">
+				<%= link_to "Create new blog entry", :controller => "blog_posts", :action => "new" %> </h2>
+			</div>
+		<% end %>
+	</div>
+</div>
+
+<div class="center" id="blog">
+	<%= image_tag @user.photo.url(:small), :id => "blog_user_photo" %>
+	<h1><%= @user.display_name %>'s Blog</h1>
+	<%= render :partial => "blog_item", :collection => @posts %>
+	<div class="footer_padding"></div>
+</div>

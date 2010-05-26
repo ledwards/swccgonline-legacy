@@ -1,0 +1,36 @@
+<div class="center" id="new_post">
+	<h1>New <%= @post.post_type.name %></h1>
+	<%= image_tag "/images/edit_#{@post.post_type_name_with_underscores}.png" %>
+	<% form_for(@post, :live_validations => true) do |f| %>
+		<%= f.error_messages %>
+	  <p>
+	    <%= f.label :title %>
+	    <%= f.text_field :title, :size => 35 %>
+	  </p>
+	  <p>
+	    <%= f.label :body %>
+	    <%= f.text_area :body %>
+	  </p>
+	
+	  <% if @post.post_type_id %>
+	  	<%= f.hidden_field :post_type_id, {:post_type_id => @post.post_type.id} %>
+	  <% else %>
+		  <p>
+			<%= f.label :post_type_id %>
+		  	<%= select(:post, :post_type_id, PostType.options_for_select) %>
+		  </p>
+	  <% end %>
+	
+	  <%= f.label :tags %>
+	  <%= f.text_field :tag_list, :size => 35 %>
+
+	  <p>
+	    <%= f.submit 'Update', :class => "button" %>
+	  </p>
+	<% end %>
+	<div class="footer_padding"></div>
+</div>
+
+<% if @post.post_type == "Decklist" %>
+	put something to add cards or cardlists here
+<% end %>

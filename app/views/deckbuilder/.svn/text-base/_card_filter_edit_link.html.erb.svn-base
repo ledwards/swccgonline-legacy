@@ -1,0 +1,5 @@
+<%= link_to_remote "[Show]",
+	:url => { :action => "edit_card_filter", :id => card_filter_edit_link.id },
+	:html => { :id => "edit_card_filter_edit_link_"+card_filter_edit_link.id.to_s },
+	:before => "this.style.display='none'",
+	:complete => visual_effect(:blind_down, "edit_card_filter_items_"+card_filter_edit_link.id.to_s, :duration => 0.5) %>

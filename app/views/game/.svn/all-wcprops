@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/s_terron/swccgonline/!svn/ver/1/trunk/app/views/game
+END
+play.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/s_terron/swccgonline/!svn/ver/1/trunk/app/views/game/play.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/s_terron/swccgonline/!svn/ver/1/trunk/app/views/game/index.html.erb
+END
+_card.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/s_terron/swccgonline/!svn/ver/1/trunk/app/views/game/_card.html.erb
+END
+test.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/s_terron/swccgonline/!svn/ver/1/trunk/app/views/game/test.html.erb
+END

@@ -1,0 +1,5 @@
+page.remove("card_filter_"+@filter_id.to_s)
+page.replace("search_results", :partial => "search_results")
+if @applied_card_filters.empty?
+  page.replace("applied_card_filters", :partial => "applied_card_filters", :object => @applied_card_filters)
+end

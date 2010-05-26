@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/s_terron/swccgonline/!svn/ver/25/trunk/vendor/plugins/jrails
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/s_terron/swccgonline/!svn/ver/25/trunk/vendor/plugins/jrails/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/s_terron/swccgonline/!svn/ver/25/trunk/vendor/plugins/jrails/CHANGELOG
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/s_terron/swccgonline/!svn/ver/25/trunk/vendor/plugins/jrails/install.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/s_terron/swccgonline/!svn/ver/25/trunk/vendor/plugins/jrails/README
+END

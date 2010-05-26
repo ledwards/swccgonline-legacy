@@ -1,0 +1,17 @@
+<div id="container">
+	<div class="left">
+	  <%= render(:partial => "deckbox", :object => @decks) %>
+	</div>
+</div>
+
+<div class="center">
+	<h1>Deckbox</h1>
+	<div class="deck_listings">
+		<%= will_paginate @decks, :id => "top_paginate" %>
+		<%= render :partial => "deck_listing", :collection => @decks %>
+		<%= will_paginate @decks, :id => "bottom_paginate" %>
+		<%= javascript_tag "$('div.deck_listing').corner();" %>
+	</div>
+	<br /><br />
+</div>
+

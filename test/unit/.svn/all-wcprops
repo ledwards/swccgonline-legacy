@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/s_terron/swccgonline/!svn/ver/25/trunk/test/unit
+END
+user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/s_terron/swccgonline/!svn/ver/5/trunk/test/unit/user_test.rb
+END
+comment_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/s_terron/swccgonline/!svn/ver/7/trunk/test/unit/comment_test.rb
+END
+deck_item_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/s_terron/swccgonline/!svn/ver/1/trunk/test/unit/deck_item_test.rb
+END
+post_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/s_terron/swccgonline/!svn/ver/7/trunk/test/unit/post_test.rb
+END
+deck_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/s_terron/swccgonline/!svn/ver/1/trunk/test/unit/deck_test.rb
+END
+post_type_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/s_terron/swccgonline/!svn/ver/7/trunk/test/unit/post_type_test.rb
+END
+user_mailer_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/s_terron/swccgonline/!svn/ver/5/trunk/test/unit/user_mailer_test.rb
+END
+card_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/s_terron/swccgonline/!svn/ver/1/trunk/test/unit/card_test.rb
+END

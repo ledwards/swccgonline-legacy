@@ -1,0 +1,3 @@
+page.insert_html(:bottom, "card_filter_"+@card_filter.id.to_s, :partial => "edit_card_filter", :object => @card_filter)
+page.insert_html(:bottom, "card_filter_edit_link_container_"+@card_filter.id.to_s, :partial => "card_filter_hide_link", :object => @card_filter)
+page.remove("edit_card_filter_edit_link_"+@card_filter.id.to_s)

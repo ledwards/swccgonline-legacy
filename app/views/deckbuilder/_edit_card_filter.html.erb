@@ -1,0 +1,28 @@
+<div class="card_filter_box" id= "<%= "edit_card_filter_items_"+@card_filter.id.to_s %>">  
+
+	<p class="delete_card_filter_link">
+		<%= link_to_remote "Permanently delete this filter?", :url => {:controller => "deckbuilder", :action => "delete_card_filter", :id => @card_filter.id }, :confirm => "Are you sure you want to permanently delete this filter? This action cannot be undone." %>
+	</p>
+
+  <% remote_form_for @card_filter, :url => { :controller => "deckbuilder", :action => "update_card_filter" } do |f| %>
+    
+		<%= f.hidden_field :id, {:card_filter_id => @card_filter.id } %>
+		
+		<%= f.label :rename %>
+		<%= f.text_field :name, :autocomplete =>"off" %>  	
+
+    <div class="card_filter_items" id="<%= "card_filter_items_"+@card_filter.id.to_s %>">
+      <%= render :partial => 'card_filter_item', :collection => @card_filter.card_filter_items %>
+    </div>
+    
+    <p>
+      <%= link_to_remote "Add New Criteria", :url => {:controller => "deckbuilder", :action => "add_new_edit_criteria", :id => @card_filter.id } %>
+		</p>
+    
+    <p>
+	    <%= f.submit "Save", :class => "button" %>
+			<%= link_to_remote "Cancel", :url => { :action => "hide_edit_card_filter", :id => @card_filter.id } %>
+    </p>
+  <% end %>
+
+</div>

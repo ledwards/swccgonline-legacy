@@ -1,0 +1,21 @@
+<div id="tabs" class="ui-tabs">
+	<ul>
+		<li><a href="#main_deck"><span>Main Deck</span></a></li>
+		<li><a href="#sixtyfirst_cards"><span>61st Cards</span></a></li>
+		<li><a href="#side_deck"><span>Side Deck</span></a></li>
+	</ul>
+	
+	<div id="main_deck" class="ui-tabs-hide" class="decklist_tab">
+		<%= render(:partial => "main_deck" , :object => decklist) %>
+	</div>
+	
+	<div id="sixtyfirst_cards" class="ui-tabs-hide" class="decklist_tab">
+		<%= render(:partial => "sixtyfirst_cards" , :object => decklist) %>
+	</div>
+	
+	<div id="side_deck" class="ui-tabs-hide" class="decklist_tab">
+		<%= render(:partial => "side_deck" , :object => decklist) %>
+	</div>
+</div>
+
+<p class="total" id="decklist_total">Total (<%= decklist.total_quantity %>)</p>

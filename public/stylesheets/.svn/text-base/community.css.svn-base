@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+div.left, div.right { min-height: 50px; background: #434343 url(/images/box_bottom.gif) left bottom no-repeat; position: relative; font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #898989;}
+div.left { float: left; width: 283px; margin-right: 50px; margin-left: 20px; padding-top: 25px; margin-bottom: 35px; }
+div.right { float: right; width: 283px; margin-left: 20px; padding-top: 25px; margin-bottom: 35px; }
+div.center { width: auto; height: 55px; text-align: center;  position: relative; margin: 0 298px 0 298px; padding: 55px 0 0 10px; background: url(/images/community.gif) top center no-repeat;}
+div.left h1, div.right h1{ position: absolute; top: 0; left: 0; background: url(/images/box_header.gif) top left no-repeat; height: 21px; font: 9px/20px 'Lucida Grande','Lucida Sans Unicode',Verdana, sans-serif; letter-spacing: 1px; font-weight: bold; color: #f0f0f0; display: block; text-transform: uppercase; width: 100%; text-indent: 6px; }
+div.center h1{ display: none }
+
+#nav ul li a:hover, #nav ul li#community a, #nav ul li#community a:hover { background: url(/images/whiteoverlay.png) top center repeat-x; color: #fff;}
+
+h3 {color: #ffde71;}
+
+ol { margin-left: 20px; }
+ol li { margin: 5px; }
+.posts { margin: 5px; }
+div#contributions ul li a, div#contributions ul li { font-size: 12px }

@@ -1,0 +1,91 @@
+<div id="container">
+	<div class="right">	
+		<h1>Ratings and Comments</h1>
+		<h2>Rate this <%= @post_type.downcase %></h2>
+		<%= ratings_for @post %>
+
+		<h2>Comments</h2>	
+		<div class="comments">
+			<%= render :partial => "posts/comment", :collection => @post.comments.reverse %>
+		</div>
+	</div>
+</div>
+
+<div class="center" id="post_center">
+	<h2><%=h @post.title %></h2>
+
+	<p>
+		by <%= link_to @post.user.login, "/profiles/" + @post.user.login %>
+		on <%= @post.user.created_at.to_date %>
+	</p>
+	
+	<p>
+		<%= @deck.description %>
+	</p>
+	
+	<% if @current_user == @post.user %>
+		<p>
+			<%= link_to '[Edit Post]', :action => "edit" %>
+			<%= link_to '[Edit Deck]', :controller => "deckbuilder", :deck_id => @post.deck.id %>
+		</p>
+	<% end %>
+
+	<% if @post_type == "Decklist" %>
+		<h2 class="decklist_header">Decklist</h2>
+		<ol class="cardlist" id="decklist">
+			<% @main_deck_cards_by_type.each do |card_type, cards| %>
+				<h3><%= card_type.pluralize %> (<%= cards.length %>)</h3>
+				<% cards.each do |card| %>
+					<li><%= card.title %></li>
+				<% end %>
+			<% end %>
+		</ol>
+		
+		<h3>Side Deck</h3>
+		<ol class="cardlist" id="side_deck">
+			<% @side_deck_cards.each do |card| %>
+				<li><%= card.title %></li>
+			<% end %>
+		</ol>
+		
+		<h3>61st Cards</h3>
+		<ul class="cardlist" id="sixtyfirst_cards">
+			<% @sixtyfirst_cards.each do |card| %>
+				<li><%= card.title %></li>
+			<% end %>
+		</ul>
+		
+	<% end %>
+	
+	<h2 class="decklist_header">Strategy</h2>
+	<p class="post_body">
+		<%= format_body @post.body %>
+	</p>
+		
+	<!-->
+	<p>
+		Tags:
+		<% @post.tag_list.each do |tag| %>
+			<%= link_to tag, :controller => :tags, :action => :show, :tag_name => tag  %>
+		<% end %>
+	</p>
+	<!-->
+
+	<div class="new_comment">
+		<% form_tag(:controller => "posts", :action => "add_comment", :id => @post) do %>
+		  <h2>Post a comment</h2>
+		  <%= text_area_tag :body, "Got something to say?", { 
+					:rows => "10",
+					:cols => "40",
+					:value => "Got something to say?",
+					:onblur => "if(this.value=='') this.value='Got something to say?';",
+					:onfocus => "if(this.value==this.defaultValue) this.value='';" } %>
+		  <%= hidden_field_tag :user_id, @current_user.id %>
+		  <%= hidden_field_tag :post_id, @post.id %>
+		  <p>
+		  	<%= submit_tag 'Submit', :class => "button" %>
+		  </p>
+		<% end %>
+		<br /><br />
+	</div>
+</div>

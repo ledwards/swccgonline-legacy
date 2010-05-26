@@ -1,0 +1,1 @@
+page.insert_html :bottom, :card_filter_items, :partial => 'card_filter_item', :object => CardFilterItem.new

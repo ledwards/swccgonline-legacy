@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/s_terron/swccgonline/!svn/ver/25/trunk/test/unit/helpers
+END
+community_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/s_terron/swccgonline/!svn/ver/7/trunk/test/unit/helpers/community_helper_test.rb
+END
+comments_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/s_terron/swccgonline/!svn/ver/7/trunk/test/unit/helpers/comments_helper_test.rb
+END
+blogs_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/s_terron/swccgonline/!svn/ver/25/trunk/test/unit/helpers/blogs_helper_test.rb
+END
+messages_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/s_terron/swccgonline/!svn/ver/14/trunk/test/unit/helpers/messages_helper_test.rb
+END
+posts_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/s_terron/swccgonline/!svn/ver/7/trunk/test/unit/helpers/posts_helper_test.rb
+END

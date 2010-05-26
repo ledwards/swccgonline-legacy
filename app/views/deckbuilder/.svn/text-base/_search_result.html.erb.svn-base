@@ -1,0 +1,24 @@
+<div class = "search-result-wrapper">
+  <% form_remote_tag :url => { :action => :add_to_decklist, :id => search_result } do %>
+  
+    <div id = "<%= search_result.id.to_s -%>" class = "results-thumbnail">
+      <%= image_tag search_result.image_front_url -%>
+    </div>
+    
+    <div class = "results-name">
+    	<%= search_result.uniqueness -%> <%= link_to search_result.title, :controller => "cards", :action => "show", :id => search_result.id -%>
+			<br />
+	  	<%= search_result.type_and_subtype -%>
+			<br />
+			<%= search_result.expansion -%>  
+    </div>
+
+    <div class = "results-add">
+      <%= image_submit_tag "/images/add.png", :class => "add-to-decklist-button" -%>
+    </div>
+    
+    <%= create_static_tooltip search_result.id.to_s, search_result.image_front_url.to_s %>
+    <%= create_modal "div\##{search_result.id.to_s} img", search_result.title, '<div class="my_qtip_content">'+image_tag(search_result.image_front_url)+'</div>', "X" %>
+  <% end %>
+  
+</div>

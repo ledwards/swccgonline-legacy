@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/s_terron/swccgonline/!svn/ver/34/trunk/app/views/user_mailer
+END
+signup_notification.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/16/trunk/app/views/user_mailer/signup_notification.erb
+END
+activation.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/s_terron/swccgonline/!svn/ver/5/trunk/app/views/user_mailer/activation.erb
+END
+reset_password.erb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/s_terron/swccgonline/!svn/ver/34/trunk/app/views/user_mailer/reset_password.erb
+END

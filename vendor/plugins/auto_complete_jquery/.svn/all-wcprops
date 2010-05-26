@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/auto_complete_jquery
+END
+auto_complete_jquery.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/auto_complete_jquery/auto_complete_jquery.gemspec
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/auto_complete_jquery/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/auto_complete_jquery/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/auto_complete_jquery/CHANGELOG
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/s_terron/swccgonline/!svn/ver/28/trunk/vendor/plugins/auto_complete_jquery/README
+END

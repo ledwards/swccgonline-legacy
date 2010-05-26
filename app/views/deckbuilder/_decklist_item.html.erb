@@ -1,0 +1,19 @@
+<% if decklist_item == @current_item %>
+ <div id="current_item" class="decklist_item">
+<% else %>
+ <div class="decklist_item">
+<% end %>
+
+<%= link_to_remote image_tag("/images/filters_delete.png"), :url => {:controller => "deckbuilder", :action => "remove_from_decklist", :id => decklist_item.card.id } -%>
+
+<%= text_field_tag decklist_item.id, decklist_item.quantity, :size => 2, :maxlength => 2,
+		:onchange => "$.post('/deckbuilder/change_deck_item_quantity', { 
+									card_id: #{decklist_item.card.id.to_s},
+									quantity: $(this).val()
+								});" %>
+
+<span class="decklist_item_title">
+	<%= decklist_item.card.shortened_title(28) %>
+</span>
+
+</div>

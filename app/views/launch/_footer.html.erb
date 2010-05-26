@@ -1,0 +1,31 @@
+<div id="account">
+  <% if flash[:notice] -%>
+    <div id="notice"><%= flash[:notice] %></div>
+  <% end -%>
+  <ul>
+    <li id="username"><%= link_to @current_user.display_name, :controller => "profiles", :action => @current_user.login %> logged in</li>
+    <li><%= link_to "Log Out", :controller => "logout" %></li>
+    <li><%= link_to "Account Settings", :controller => "settings" %></li>
+  </ul>
+
+  <div class="hidden">  
+    <%= render :partial => "launch/gamer_card" %>
+  </div>
+  
+<!-->
+ <script type='text/javascript' language="javascript">
+   new Tip('username', $('my_gamer_card'), {
+     title: 'Captain Mog',
+     height: '210',
+     width: '345',
+     style: 'darkgrey',
+     closeButton: 'true',
+     hideOn: { element: 'closeButton', event: 'click'},
+     stem: 'bottomLeft',
+     hook: { target: 'topMiddle', tip: 'bottomLeft' },
+     offset: { x: -35, y: 0 },
+   });
+ </script>
+<!-->
+
+</div>

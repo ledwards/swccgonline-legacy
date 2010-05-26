@@ -1,0 +1,4 @@
+page.replace("search_term_as_a_filter", :partial => "search_term_as_a_filter", :object => @search_term)
+page.hide("search_term_as_a_filter")
+page.visual_effect(:appear, "search_term_as_a_filter", :duration => 0.5)
+page.replace_html("search_results", :partial => "search_results")

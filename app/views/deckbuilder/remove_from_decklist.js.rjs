@@ -1,0 +1,2 @@
+page.replace_html("decklist_total", "Total (#{@decklist.total_quantity})")
+page.replace_html(@tab, :partial => @tab, :object => @decklist)

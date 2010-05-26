@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+* html body{  overflow:hidden; }
+
+div.center { width: auto; height: 55px; text-align: center;  position: relative; margin: 0 298px 0 298px; padding: 55px 0 0 10px; background: url(/images/card_database.gif) top center no-repeat;}
+
+#nav ul li a:hover, #nav ul li#cards a, #nav ul li#cards a:hover { background: url(/images/whiteoverlay.png) top center repeat-x; color: #fff;}
+
+.card-database {
+	color: #ffffff; font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif,bold;
+	padding: 25px;
+}
+
+p {
+	color: #ffffff; font: 12px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif,bold;
+}
+
+div.card {
+	width: auto;
+	height: 55px;
+	width: 400px;
+	position: relative;
+	margin: 0 298px 0 298px;
+	padding: 55px 0 0 10px;
+}
+
+div.cards { margin-top: 50px; }

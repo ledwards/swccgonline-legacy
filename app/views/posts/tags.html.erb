@@ -1,0 +1,41 @@
+<div id="container">
+	<div class="left">
+		<h1>
+			Your <%= @post_type.name.pluralize %> tagged with <%= @tag_name %>
+		</h1>
+		<div id="new_post">
+			<%= link_to 'New ' + @post_type.name, :action => "new", :post_type_id => @post_type.id %>
+		</div>
+		<div class="posts">
+			<%= render :partial => "post", :collection => @my_posts %>
+		</div>
+		<%= link_to 'More', :action => "index" %>
+	</div>
+	
+	<div class="right">
+		<h1>Tags</h1>
+		<div class="tag_cloud">
+			<% tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| %>
+			  <%= link_to tag.name, { :controller => @controller_name, :action => "tags", :id => tag.name }, :class => css_class %>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+<div class="center">
+	<h2><%= @post_type.name.pluralize %> tagged with <%= @tag_name %></h2>
+
+	<% if @posts.empty? %>
+		<div class = "no_posts">
+			<h2>No <%= @post_type.name.pluralize %> found.</h2>
+		</div>
+	
+	<% else %>
+		<div class = "posts">
+			<ul>
+				<%= render :partial => "post", :collection => @posts %>
+			</ul>
+			<%= will_paginate @posts %>
+		</div>
+	<% end %>
+</div>

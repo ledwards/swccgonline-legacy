@@ -1,0 +1,15 @@
+<div class="search-results" id ="search_results">
+  <% if !@search_results.empty? %>
+		<% if @search_term %>
+			<h2>Displaying search results for "<%= @search_term %>"</h2>
+		<% end %>
+		<%= will_paginate @search_results, :id => "top_paginate", :params => { :action => "paginate" } %>
+    <%= render :partial => "search_result", :collection => @search_results.collect{|c|Card.find(c)} %>
+		<%= will_paginate @search_results, :id => "bottom_paginate" %>
+	<% else %>
+		<h2>No search results found</h2>
+		<p>Remove some filters or change search term.</p>
+	<% end %>
+</div>
+
+<%= javascript_tag "$('div.search-result-wrapper').corner();" %>

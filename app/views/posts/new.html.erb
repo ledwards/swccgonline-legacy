@@ -1,0 +1,48 @@
+<div class="center" id="new_post">
+	<h1>New <%= @post.post_type.name %></h1>
+	<%= image_tag "/images/new_#{@post.post_type_name_with_underscores}.png" %>
+	<% form_for(@post, :live_validations => true) do |f| %>
+		<%= f.error_messages %>
+	  <p>
+	    <%= f.label :title %>
+	    <%= f.text_field :title, :size => 35 %>
+	  </p>
+	  <p>
+	    <%= f.label :body %>
+	    <%= f.text_area :body %>
+	  </p>
+	
+	  <% if @post.post_type_id %>
+	  	<%= f.hidden_field :post_type_id, {:post_type_id => @post.post_type.id} %>
+	  <% else %>
+		  <p>
+			<%= f.label :post_type_id %>
+		  	<%= select(:post, :post_type_id, PostType.options_for_select) %>
+		  </p>
+	  <% end %>
+
+	  <%= f.hidden_field :user_id, {:user_id => @current_user.id} %>
+
+	  <%= f.label :tags %>
+	  <%= f.text_field :tag_list, :size => 35 %>
+
+	  <%= f.label :decklist %>
+
+		<% if @post_type == "Decklist" %>
+			<div class="deck_selector">
+				<% @decks.each do |d| %>
+					<p>
+						<%= f. radio_button :deck_id, d.id %>
+						<%= label :post, :deck_id, d.title, :class => "radio_label" %>
+					</p>
+				<% end %>
+			</div>
+		<% end %>
+			
+	  <p>
+	    <%= f.submit 'Create', :class => "button" %>
+	  </p>
+	<% end %>
+
+	<div class="footer_padding"></div>
+</div>

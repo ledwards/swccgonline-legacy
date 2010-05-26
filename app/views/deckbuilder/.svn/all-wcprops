@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/s_terron/swccgonline/!svn/ver/49/trunk/app/views/deckbuilder
+END
+_main_deck.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/_main_deck.html.erb
+END
+add_to_decklist.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/s_terron/swccgonline/!svn/ver/45/trunk/app/views/deckbuilder/add_to_decklist.js.rjs
+END
+hide_edit_card_filter.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/hide_edit_card_filter.js.rjs
+END
+change_sides.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/change_sides.js.rjs
+END
+_deck_details.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/_deck_details.html.erb
+END
+update_card_filter.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/41/trunk/app/views/deckbuilder/update_card_filter.js.rjs
+END
+add_new_criteria.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/39/trunk/app/views/deckbuilder/add_new_criteria.js.rjs
+END
+_edit_card_filter.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/_edit_card_filter.html.erb
+END
+_saved_card_filters.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/_saved_card_filters.html.erb
+END
+_card_filter_hide_link.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/_card_filter_hide_link.html.erb
+END
+switch_tab.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/s_terron/swccgonline/!svn/ver/45/trunk/app/views/deckbuilder/switch_tab.js.rjs
+END
+change_deck_item_quantity.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/change_deck_item_quantity.js.rjs
+END
+add_new_edit_criteria.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/s_terron/swccgonline/!svn/ver/41/trunk/app/views/deckbuilder/add_new_edit_criteria.js.rjs
+END
+move_between_tabs.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/move_between_tabs.js.rjs
+END
+_main_deck_item.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/_main_deck_item.html.erb
+END
+_cards.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/s_terron/swccgonline/!svn/ver/1/trunk/app/views/deckbuilder/_cards.html.erb
+END
+delete_card_filter.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/delete_card_filter.js.rjs
+END
+_card_filter_edit_link.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/_card_filter_edit_link.html.erb
+END
+remove_from_decklist.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/s_terron/swccgonline/!svn/ver/45/trunk/app/views/deckbuilder/remove_from_decklist.js.rjs
+END
+_decklist.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/_decklist.html.erb
+END
+search.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/search.js.rjs
+END
+_sixtyfirst_cards.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/_sixtyfirst_cards.html.erb
+END
+clear_decklist.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/clear_decklist.js.rjs
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/index.html.erb
+END
+remove_search_term.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/remove_search_term.js.rjs
+END
+_side_deck.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/s_terron/swccgonline/!svn/ver/45/trunk/app/views/deckbuilder/_side_deck.html.erb
+END
+_applied_card_filter.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/s_terron/swccgonline/!svn/ver/41/trunk/app/views/deckbuilder/_applied_card_filter.html.erb
+END
+_decklist_item.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/_decklist_item.html.erb
+END
+_sixtyfirst_cards_item.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/_sixtyfirst_cards_item.html.erb
+END
+edit_card_filter.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/edit_card_filter.js.rjs
+END
+apply_card_filter.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/apply_card_filter.js.rjs
+END
+save_deck.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/s_terron/swccgonline/!svn/ver/47/trunk/app/views/deckbuilder/save_deck.js.rjs
+END
+_search_term_as_a_filter.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/_search_term_as_a_filter.html.erb
+END
+_search_results.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/_search_results.html.erb
+END
+_new_card_filter.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/41/trunk/app/views/deckbuilder/_new_card_filter.html.erb
+END
+remove_card_filter.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/remove_card_filter.js.rjs
+END
+_card_filter_item.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/s_terron/swccgonline/!svn/ver/41/trunk/app/views/deckbuilder/_card_filter_item.html.erb
+END
+_applied_card_filters.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/s_terron/swccgonline/!svn/ver/42/trunk/app/views/deckbuilder/_applied_card_filters.html.erb
+END
+create_card_filter.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/s_terron/swccgonline/!svn/ver/41/trunk/app/views/deckbuilder/create_card_filter.js.rjs
+END
+_saved_card_filter.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/s_terron/swccgonline/!svn/ver/41/trunk/app/views/deckbuilder/_saved_card_filter.html.erb
+END
+_search_result.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/s_terron/swccgonline/!svn/ver/39/trunk/app/views/deckbuilder/_search_result.html.erb
+END

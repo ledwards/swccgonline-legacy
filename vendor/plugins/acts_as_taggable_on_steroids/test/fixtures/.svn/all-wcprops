@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/user.rb
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/users.yml
+END
+taggings.yml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/taggings.yml
+END
+subscription.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/subscription.rb
+END
+post.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/post.rb
+END
+special_post.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/special_post.rb
+END
+subscriptions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/subscriptions.yml
+END
+posts.yml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/posts.yml
+END
+photo.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/photo.rb
+END
+photos.yml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/photos.yml
+END
+magazine.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/magazine.rb
+END
+magazines.yml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/magazines.yml
+END
+tags.yml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/test/fixtures/tags.yml
+END

@@ -1,0 +1,15 @@
+<div class="comment-wrapper">
+	<div class="commenter">
+		<%= link_to image_tag(comment.user.photo(:thumb)), :controller => "users", :action => comment.user.login %>
+	</div>
+	<div class="comment">
+		<p><%= format_body(comment.body) %></p>
+		<p class="comment-sig">
+			<%= link_to comment.user.display_name, :controller => "users", :action => comment.user.login %>
+			<%=h comment.created_at.to_date %>
+		</p>
+	</div>
+	<div class="moderator-actions">
+	</div>
+	<div style="clear:both;"></div>
+</div>

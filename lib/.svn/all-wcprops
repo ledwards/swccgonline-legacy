@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/s_terron/swccgonline/!svn/ver/20/trunk/lib
+END
+authenticated_test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/s_terron/swccgonline/!svn/ver/5/trunk/lib/authenticated_test_helper.rb
+END
+pagination_with_tags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/s_terron/swccgonline/!svn/ver/20/trunk/lib/pagination_with_tags.rb
+END
+authenticated_system.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/s_terron/swccgonline/!svn/ver/5/trunk/lib/authenticated_system.rb
+END

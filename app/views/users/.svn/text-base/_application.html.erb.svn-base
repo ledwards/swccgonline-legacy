@@ -1,0 +1,22 @@
+<div class="settings">
+	<div class="settings_left">
+		<div class="description" id="remember_me_description">
+			<h2>Application Settings</h2>
+			<%= label :user, "remember_me", "Check to stay signed in" %>
+		</div>
+	</div>
+	<div class="settings_right">
+	  <% remote_form_for @user do |f| -%>
+
+		<div class="remember_me">
+			<div class="checkbox"><%= f.check_box 'remember_me' %></div>
+			<%= label :user, "remember_me", "Remember me"%>
+		</div>
+		
+		<div class="button_container">
+	    	<%= f.submit "Save", { :class => 'button', :id => "account_button", :onclick => "$('#account_button').val('Updating...');" } %>
+		</div>
+		
+	  <% end %>
+	</div>
+</div>

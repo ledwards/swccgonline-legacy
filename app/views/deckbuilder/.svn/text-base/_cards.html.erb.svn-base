@@ -1,0 +1,5 @@
+<ul class="search-results">
+<% for card in @cards do -%>
+  <li class="search-result"><%= image_tag card.image_front_url, :class => 'card-thumbnail' -%></span><p><b><span class="informal"><%= card.uniqueness -%></span><%=h card.title -%></b></p><p class="informal"><%=h card.expansion -%></p></li>
+<% end -%>
+</ul>

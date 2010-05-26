@@ -1,0 +1,15 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>User Name</th>
+    <th>Name</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%=h user.login %></td>
+    <td><%=h user.display_name %></td>
+  </tr>
+<% end %>
+</table>

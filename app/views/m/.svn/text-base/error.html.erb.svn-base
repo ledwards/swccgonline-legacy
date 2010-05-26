@@ -1,0 +1,23 @@
+<div id="graphic">
+	<%= image_tag "/images/uhoh.gif" %>
+</div>
+<div id="notice">
+	<p><%= flash[:notice] %></p>
+</div>
+<div class="container">
+	<div class="left">
+		<%= image_tag "/images/uhoh.png" %>
+	</div>
+
+	<div class="right">
+		<p>Sorry, we have suffered a serious error.</p>
+		<br />
+		<p class="important">Error 500: Application Error</p>
+		<br/>
+		<p>Please <%= link_to "contact the admin", "mailto:#{User.find(1).email}" %> with details about how you got here. </p>
+		<br />
+		<p>Follow <%= link_to "this link", :controller => "launch", :action => "index" %> back to safe territory.</p>
+	</div>
+</div>
+
+<%= javascript_tag "$('div.left, div.right').corner();" %>

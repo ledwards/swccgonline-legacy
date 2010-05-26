@@ -1,0 +1,20 @@
+<% if main_deck_item == @current_item %>
+ <div id="current_item" class="decklist_item">
+<% else %>
+ <div class="decklist_item">
+<% end %>
+
+<%= link_to_remote image_tag("/images/arrow_right.png"), :url => {:controller => "deckbuilder", :action => "move_between_tabs", :card_id => main_deck_item.card.id, :destination => "sixtyfirst_cards" } -%>
+<%= link_to_remote image_tag("/images/filters_delete.png"), :url => {:controller => "deckbuilder", :action => "remove_from_decklist", :id => main_deck_item.card.id } -%>
+
+<%= text_field_tag main_deck_item.id, main_deck_item.quantity, :size => 2, :maxlength => 2,
+		:onchange => "$.post('/deckbuilder/change_deck_item_quantity', { 
+									card_id: #{main_deck_item.card.id.to_s},
+									quantity: $(this).val()
+								});" %>
+
+<span class="decklist_item_title">
+	<%= main_deck_item.card.shortened_title(24) %>
+</span>
+
+</div>

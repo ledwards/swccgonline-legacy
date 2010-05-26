@@ -1,0 +1,2 @@
+module DeckboxHelper
+end

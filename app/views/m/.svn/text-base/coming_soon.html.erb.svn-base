@@ -1,0 +1,21 @@
+<div id="graphic">
+	<%= image_tag "/images/coming_soon.gif" %>
+</div>
+<div id="notice">
+	<p><%= flash[:notice] %></p>
+</div>
+<div class="container">
+	<div class="left">
+		<%= image_tag "/images/operationalasplanned.png" %>
+	</div>
+
+	<div class="right">
+		<p>Sorry, the feature you have requested is not currently implemented.</p>
+		<br />
+		<p class="important">I tell you that this station will be operational as planned.</p>
+		<br />
+		<p>To keep up to date on our development, please visit the <%= link_to "Dev Blog", :controller => "blogs", :action => "dev" %>.</p>
+	</div>
+</div>
+
+<%= javascript_tag "$('div.left, div.right').corner();" %>

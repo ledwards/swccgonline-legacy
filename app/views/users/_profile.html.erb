@@ -1,0 +1,46 @@
+<div class="settings">
+	<div class="settings_left">
+		<div class="description" id="profile_description">
+			<h2>Edit Your Profile</h2>
+			<%= label :user, "location", "Where do you live?" %>
+			<%= label :user, "blog_title", "Name your blog" %>
+		</div>
+		<div class="description" id="photo_description">
+			<%= label :user, "photo", "Upload a picture for your profile" %>			
+		</div>
+		<div class="description" id="about_me_description">
+			<%= label :user, "about_me", "Tell us who you are" %>
+		</div>
+	</div>
+	
+	<div class="settings_right">
+		<div class="about_me_form">
+			<% form_for @user, :html => { :multipart => true } do |f| -%>
+
+			    <%= f.text_field 'location', :class => 'field', :id => 'location',
+				:value => @user.location,
+				:autocomplete =>"off" %>
+		
+				<%= f.text_field 'blog_title', :class => 'field', :id => 'blog_title',
+				:value => @user.blog_title,
+				:autocomplete =>"off" %>
+		
+				<div class = "photo_input">
+					<%= image_tag @user.photo.url(:small) %>
+					<%= f.file_field :photo, :size => "15" %>
+				</div>
+
+		      	<%= f.text_area :about_me, { 
+					:rows => "10",
+					:cols => "25",
+					:value => @user.about_me || 'Tell everyone about yourself.',
+					:onblur => "if(this.value=='') this.value=this.defaultValue;",
+					:onfocus => "if(this.value=='Tell everyone about yourself.') this.value='';" } %>
+
+				<div class="button_container">
+			    	<%= f.submit "Save", { :class => 'button', :id => "account_button", :onclick => "$('#account_button').val('Updating...');" } %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,6 @@
+<li id="search_term_as_a_filter">
+	<p>
+		<%= link_to_remote image_tag("/images/filters_delete.png"), :url => { :action => "remove_search_term" } %>
+		Card contains the term: "<%= search_term_as_a_filter %>"
+	</p>
+</li>

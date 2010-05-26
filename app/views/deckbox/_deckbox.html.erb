@@ -1,0 +1,12 @@
+<div class="deckbox">
+  <h1><%= @current_user.display_name + '\'s' %> Deckbox (<%= @decks.length %>)</h1>
+    <% for deck in @decks -%>
+      <div class="deck_entry">
+        <h3><%=h deck.title %></h3>
+        <%= deck.description %>
+        <%= link_to "Play" , :action => "make_current_deck", :deck_id => deck.id %>
+        | <%= link_to "Edit" , :controller => "deckbuilder", :deck_id => deck.id %>
+        | <%= link_to "Delete" , :action => "#", :deck_id => deck.id %>
+      </div>
+    <% end %>
+</div>

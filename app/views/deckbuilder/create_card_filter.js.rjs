@@ -1,0 +1,2 @@
+page.insert_html(:bottom, "saved_card_filters_list", :partial => "saved_card_filter", :object => @card_filter)
+page.replace("new_card_filter", :partial => "new_card_filter")

@@ -1,0 +1,49 @@
+<% @user.password = @user.password_confirmation = nil %>
+
+<div id="signup">
+  <h1>Join us!</h1>
+
+  <% remote_form_for :user, :url => users_path do |f| -%>
+
+	<div id="signup_errors" class="errors">
+	</div>
+   
+	<%= f.text_field 'login', :class => 'field', :id => 'username',
+	:value => "Desired username",
+	:onblur => "if(this.value=='') this.value=this.defaultValue;",
+	:onfocus => "if(this.value==this.defaultValue) this.value='';",
+	:autocomplete =>"off" %>
+
+	<%= f.text_field 'first_name', :class => 'field', :id => 'first_name',
+	:value => "Your first name",
+	:onblur => "if(this.value=='') this.value=this.defaultValue;",
+	:onfocus => "if(this.value==this.defaultValue) this.value='';",
+	:autocomplete =>"off" %>
+	
+	<%= f.text_field 'last_name', :class => 'field', :id => 'last_name',
+	:value => "Your last name",
+	:onblur => "if(this.value=='') this.value=this.defaultValue;",
+	:onfocus => "if(this.value==this.defaultValue) this.value='';",
+	:autocomplete =>"off" %>
+
+    <%= f.text_field 'email', :class => 'field', :id => 'email',
+	:value => "Valid e-mail address",
+	:onblur => "if(this.value=='') this.value=this.defaultValue;",
+	:onfocus => "if(this.value==this.defaultValue) this.value='';" %>
+
+    <%= f.password_field 'password', :class => 'field', :id => 'password',
+	:value => "PASSWORD",
+	:onblur => "if(this.value=='') this.value=this.defaultValue;",
+	:onfocus => "if(this.value==this.defaultValue) this.value='';" %>
+
+    <%= f.password_field 'password_confirmation', :class => 'field', :id => 'password_confirmation',
+	:value => "password",
+	:onblur => "if(this.value=='') this.value=this.defaultValue;",
+	:onfocus => "if(this.value==this.defaultValue) this.value='';" %>
+
+    <%= f.submit "Sign up", { :class => 'button', :onclick => '$("#signup_errors").html("<h2>Processing request...</h2>")' } %>
+	<%= link_to "Cancel", "#", {:onclick => "Boxy.get(this).hide(); return false;"} %>
+
+  <% end %>
+  <p><%= link_to "Terms of Service", {:controller => "m", :action => "tos"}, :popup => true %>.</p>
+</div>

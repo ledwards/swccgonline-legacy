@@ -1,0 +1,46 @@
+<div class="settings">
+	<div class="settings_left">
+		<div class="description" id="email_description">
+			<h2>Change E-mail</h2>
+			<%= label :user, "email", "Change your e-mail address" %>
+		</div>
+		<div class="description" id="password_description">
+			<h2>Change Password</h2>
+			<%= label :user, "password", "Change your password" %>
+			<%= label :user, "password_confirmation", "Confirm your new password" %>
+		</div>
+	</div>	
+	
+	<div class="settings_right">
+		<div class="settings_form" id="email_form">
+			<% remote_form_for @user do |f| -%>
+		
+		    	<%= f.text_field 'email', :class => 'field', :id => 'email',
+				:value => @user.email,
+				:autocomplete =>"off" %>
+		
+				<div class="button_container">
+			    	<%= f.submit "Save", { :class => 'button', :id => "email_button", :onclick => "$('#email_button').val('Updating...');" } %>
+				</div>
+			<% end %>
+		</div>
+		<div class="settings_form" id="password_form">
+	 		<% remote_form_for @user do |f| -%>
+
+		    	<%= f.password_field 'password', :class => 'field', :id => 'password',
+				:value => "PASSWORD",
+				:onblur => "if(this.value=='') this.value=this.defaultValue;",
+				:onfocus => "if(this.value==this.defaultValue) this.value='';" %>
+
+			    <%= f.password_field 'password_confirmation', :class => 'field', :id => 'password_confirmation',
+				:value => "password",
+				:onblur => "if(this.value=='') this.value=this.defaultValue;",
+				:onfocus => "if(this.value==this.defaultValue) this.value='';" %>
+
+				<div class="button_container">
+			    	<%= f.submit "Save", { :class => 'button', :id => "password_button", :onclick => "$('#password_button').val('Updating...');" } %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

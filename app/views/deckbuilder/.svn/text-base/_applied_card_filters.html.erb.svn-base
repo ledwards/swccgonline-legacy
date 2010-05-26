@@ -1,0 +1,21 @@
+<div id="applied_card_filters" class="card_filter_box">
+  <ul id="applied_card_filters_list">
+		<% if @search_term %>
+			<%= render(:partial => "search_term_as_a_filter", :object => @search_term) %>
+		<% else %>
+			<li id="search_term_as_a_filter"></li>
+	  <% end %>
+		<% if @applied_card_filters.empty? %>
+	  	<% if @saved_card_filters.empty? %>
+				<li>
+					Filters allow you to specify criteria to narrow your search results, like finding cards with Ability >3, or with "Rebel" in the lore and forfeit >4.
+				</li>
+			<% end %>
+			<li>
+				Click a saved filter below to apply it to these search results.
+			</li>
+		<% else %>
+			<%= render :partial => "applied_card_filter", :collection => @applied_card_filters %>
+	  <% end %>
+	<ul>
+</div>

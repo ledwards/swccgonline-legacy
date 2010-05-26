@@ -1,0 +1,25 @@
+<div class="card_filter_item">
+  <% new_or_existing = card_filter_item.new_record? ? 'new' : 'existing' %>
+  <% prefix = "card_filter[#{new_or_existing}_card_filter_item_attributes][]" %>
+  
+  <% fields_for prefix, card_filter_item do |card_filter_item_form| -%>
+  
+    <p>
+      <label>Category</label>
+      <%= card_filter_item_form.select :category, CardFilterItem.options, {:selected => card_filter_item.new_record? ? nil : card_filter_item.proper_category} %>
+    </p>
+  
+    <p>
+      <label>Condition</label>
+      <%= card_filter_item_form.select :condition, ["=","contains","<",">"] %>
+    </p>
+  
+    <p>
+      <label>Value</label>
+      <%= card_filter_item_form.text_field :value, :size => 20, :autocomplete =>"off" %>
+    </p>
+    
+    <%= link_to_function "Remove Criteria", "$(this).parent('.card_filter_item').remove()" %>
+  <% end %>
+</div>
+

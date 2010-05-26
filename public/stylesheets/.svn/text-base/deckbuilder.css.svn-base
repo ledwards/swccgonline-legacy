@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+div.left, div.right { min-height: 400px; background: #434343 url(/images/box_bottom.gif) left bottom no-repeat; position: relative; font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #898989; padding: 38px 10px 15px 10px; width: 263px;}
+div.left { float: left;  margin-right: 20px;  margin-bottom: 35px; }
+div.right { float: right;  margin-left: 20px;  margin-bottom: 35px; }
+div.center { width: auto; height: 55px; text-align: center;  position: relative; margin: 0 300px; padding: 55px 0 0 0; background: url(/images/deckbuilder.gif) top center no-repeat;}
+div.left h1, div.right h1{ position: absolute; top: 0; left: 0; background: url(/images/box_header.gif) top left no-repeat; height: 21px; font: 9px/20px 'Lucida Grande','Lucida Sans Unicode',Verdana, sans-serif; letter-spacing: 1px; font-weight: bold; color: #f0f0f0; display: block; text-transform: uppercase; width: 100%; text-align: center; }
+div.center h1{ display: none }
+div.right form { clear: none; display: inline;}
+
+#nav ul li a:hover, #nav ul li#deckbuilder a, #nav ul li#deckbuilder a:hover { background: url(/images/whiteoverlay.png) top center repeat-x; color: #fff;}
+
+#card_filter_tags h2{ color: #ffde71; size: 14px; font: 14px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif,bold; }
+#card_filter_tags a { color: #ffffff; font: 14px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif,bold; text-decoration: none; padding-bottom: 2px;}
+#card_filter_tags a:hover { color: #ffde71; padding-bottom: 1px; border-bottom: 1px dotted #ffde71;}
+
+h3 {font: 9px/16px 'Lucida Grande','Lucida Sans Unicode',Verdana, sans-serif; letter-spacing: 1px; text-transform: uppercase; padding-bottom: 2px; border-bottom: 1px dotted #737373; color: #fff; margin-bottom: 10px; font-weight: bold;}
+
+div.decklist {
+        /* height: 400px;               Some type of decklist scrolling needs
+           overflow: scroll;            to be implemented. */
+}
+
+div.decklist a{
+        color: #ffffff;
+}
+
+div.decklist a:hover {
+        border-bottom: none;
+}
+
+div.left ul li, div.right ul li {
+    margin-left: 15px;    
+}
+
+div.auto_complete {
+      width: 312px !important;
+      background: #434343 url(/images/autocomplete_bottom.gif) left bottom no-repeat !important;
+		  font: 11px 'Lucida Grande','Lucida Sans Unicode',Verdana, sans-serif;
+		  color: #CCCCCC;
+		  padding: 7px;
+		  border: none !important;
+}
+div.auto_complete strong { color: #fff}
+div.auto_complete ul {
+  background: none;
+  margin:0;
+  padding:0;
+  width:100% !important;
+  list-style-type:none;
+  border: none !important;
+}
+div.auto_complete ul li {
+	margin: 3px 0;
+	padding: 7px 3px 0px 3px !important;
+	background: #434343;
+	border: none;
+	height: 40px !important;
+	cursor: pointer;
+}
+div.auto_complete ul li.selected {
+	background: #1b1b1b !important;
+}
+	
+.card-thumbnail {
+	float: left;
+	height: 55px;
+	margin-right: 5px;
+	margin-top: -1px;
+}
+
+input.add-to-decklist-button { height: auto; margin-top: 5px; }
+
+.card_filter_box { width: 265px; }
+.card_filter_box ul { list-style: none; margin-left: -10px;}
+.card_filter_box li { margin-bottom: 10px; color: #CCCCCC}
+.card_filter_box img {margin-bottom: -6px; margin-right: 3px; }
+.card_filter_box label { font-weight: bold; padding-bottom: 4px; color: #CCCCCC; display: block; }
+.card_filter_item { border: 1px solid #666666; padding: 4px 8px 8px 8px; margin: 5px 0; width:205px; }
+.card_filter_item p { margin-bottom: 5px; }
+.delete_card_filter_link { margin-top: 10px; margin-bottom: 10px; }
+
+.card_filter_boxes td {	padding: 15px; background-color: #cccccc; vertical-align: top; }
+.card_filter_box td { background-color: #cccccc; }
+#saved_card_filters_list { width: 200px; }
+
+
+.deck-form fieldset {
+  background: #434343;
+  color: #898989;
+  font-family: sans-serif;
+}
+.deck-form legend {
+  background: #434343;
+  padding: 2px 5px;
+}
+.deck-form label { float: left; text-align: right; margin-left: 5px; display: block; }
+.deck-form .submit { margin: 10px; }
+
+
+.search-results { text-align: center; }
+.search-result-wrapper { width: 345px; text-align: center; margin: 0 auto; font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #898989; height: 44px; padding: 5px; background: #434343; margin-bottom: 5px; }
+.search-result img { float: left; height: 44px; margin-right: 5px; }
+.search-result p { text-align: left; }
+.results-thumbnail { float: left; width: 25px; margin: 0 10px; }
+.results-thumbnail img { float: left; height: 44px; }
+.results-name { float: left; width: 240px; margin: 0 5px; text-align: left;  font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #CCCCCC}
+.results-add { float: left; width: 20px; padding-top: 6px;  }
+#main_deck form { display: inline; width: 84px; }
+.decklist_item { color: #FFFFFF;  clear: both; vertical-align: middle; height: 25px; }
+.decklist_item input { width: 20px; font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; font-weight: 700; color:#666666; margin-right: 2px;}
+.decklist_item img { float: left; margin-right: 5px; }
+#current_item { color: #ffde71 }
+
+div.paginate { margin: 15px; }
+div.pagination { margin: 15px; }
+div.center div.search-box { margin-top: 30px; margin-bottom: 20px; }
+
+div.my_qtip_content { text-align: center; }
+div.my_qtip_content img { height: 400px; width: auto; }
+
+div.right p { margin: 10px; }
+div.left h3 { margin-top: 20px; }
+
+div.side { text-align: center; }
+div.side p { margin-bottom: 10px; }
+
+div.search-results p { font: 18px/18px Arial, Helvetica, sans-serif; color: #ffffff; }
+
+.decklist_item { font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #cccccc; }
+.decklist_item_title { margin-top: -5px; }
+
+#main_deck, #side_deck, #sixtyfirst_cards { font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #000000; }
+#main_deck, #side_deck, #sixtyfirst_cards { margin: 5px -10px 0 -5px; margin-top: 10px; }
+div.decklist p.total { text-align: right; font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #cccccc; margin-bottom: 0px; }
+#decklist_total { margin-right: 20px; margin-bottom: 15px; }
+
+.decklist_button { float: left; width: 84px; margin: 10px -6px 0 8px; }

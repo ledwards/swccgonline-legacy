@@ -1,0 +1,15 @@
+<div class="blog_entry">
+	<h2 class="blog_entry_title"><%= link_to blog_item.title, :controller => "blog_posts", :action => "show", :id => blog_item.id %></h2>
+
+	<p class="blog_item">
+		<%= blog_item.body %>
+	</p>
+
+	<h3>Posted at <%= blog_item.created_at.to_time %> | <%= link_to blog_item.comments.count.to_s + " Comments", :controller => "blog_posts", :action => "show", :id => blog_item.id %></h3>
+</div>
+
+<% if blog_item != @posts.last %>
+	<div class="divider"></div>
+<% else %>
+	<div class="end_divider"></div>	
+<% end %>

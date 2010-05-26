@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+
+div.left, div.right { min-height: 0px; background: #434343 url(/images/box_bottom.gif) left bottom no-repeat; position: relative; font: 11px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #898989; padding: 20px 10px 15px 10px; width: 263px;}
+div.left { float: left;  margin-right: 20px;  margin-bottom: 35px; }
+div.right { float: right;  margin-left: 20px;  margin-bottom: 35px; }
+div.center { width: auto; height: 55px; text-align: center;  position: relative; margin: 0 298px 0 298px; padding: 55px 0 0 10px; background: url(/images/deckbuilder.gif) top center no-repeat;}
+div.left h1, div.right h1{ position: absolute; top: 0; left: 0; background: url(/images/box_header.gif) top left no-repeat; height: 21px; font: 9px/20px 'Lucida Grande','Lucida Sans Unicode',Verdana, sans-serif; letter-spacing: 1px; font-weight: bold; color: #f0f0f0; display: block; text-transform: uppercase; width: 100%; text-align: center; }
+div.center h1{ display: none }
+div.right form { clear: none; display: inline;}
+div.left ul li, div.right ul li {
+    margin-left: 15px;    
+}
+
+* html #container{height:100%;}
+a {color: #ffffff; text-decoration: none; }
+a:hover { color: #ffde71;}
+body {background: #1b1b1b; padding-top: 4px; font-size: 1em; text-align: center; vertical-align: middle; z-index: -3}
+#logo {margin: 6% auto 0 auto; display: block; z-index: 5}
+#signup {margin: 0 auto 0 auto; display: block; z-index: 5; width: 300px; text-align: center;  }
+#signup input.field { width: 222px; height: 27px;  margin: 0 auto 10px auto; background: url(/images/login_box_bg.png) top left no-repeat; text-align: center; font: 10px "Lucida Grande", "Lucida Sans Unicode", Verdana; color: #CCCCCC; letter-spacing: 1px; overflow: hidden; padding: 6px 0; display:block; border: none;}
+
+input.button { border: none; background: url(/images/button.png) 0px 0px no-repeat; font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	font-size: 12px; color: #fad575;  padding-top: 5px; text-align: center; height:30px; width: 84px; padding-bottom: 8px;clear: both; margin-bottom: 10px;}
+input.button:hover { background-position: 0px -29px; color: #fff; cursor: pointer; }
+input.button:active { background-position: 0px -58px; color: #fff; cursor: pointer; }
+
+#signup label {font: 10px "Lucida Grande", "Lucida Sans Unicode", Verdana; color: #CCCCCC; letter-spacing: 1px; overflow: hidden; padding: 6px 0; border: none;}
+#new { width: 400px; height: 23px; background: url(/images/login_more.png) top center no-repeat; z-index: 3; text-align: center; font: 11px "Lucida Grande", "Lucida Sans Unicode", Verdana; color: #ffde71;  padding-top: 6px; margin: 0 auto; }
+#new a {margin-left: 5px;}
+
+@media screen{
+  body>div#footer, body>div#footer2{
+  	position:fixed;
+  }
+}

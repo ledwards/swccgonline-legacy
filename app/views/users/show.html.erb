@@ -1,0 +1,79 @@
+<div id="container">
+	<div class="left">
+		<h1><%=h @user.login %>'s Profile</h1>
+		<%= image_tag @user.photo.url(:small), :class => "user_picture" %>
+		<ul>
+			<li>Handle: <%=h @user.login %></li>
+			<li>Name: <%=h @user.display_name %></li>
+			<li>Hometown: Boston, MA</li>
+			<li>Rating: 1500</li>
+			<li>About me: </li>
+		</ul>
+		<p> 
+			I like horsies and pretty things. I like to do girl stuff.
+			I'm also a world champion SWCCG player. Bahaha.
+		</p>
+		<h2><%=h @user.login %>'s Stats</h2>
+		<ul>
+			<li>W/L/D: 5/2/1 </li>
+			<li>Decks: 15</li>
+			<li>Published Decklists: <%= @user.decklists.length %></li>
+			<li>Published Articles: <%= @user.articles.length %></li>
+			<li>Published TRs: <%= @user.tournament_reports.length %></li>
+			<li>Blog Entries: <%= @user.blog_posts.length %></li>
+		</ul>
+	</div>
+</div>
+
+<div class="center">
+	
+	<div class="post_section">
+		<h2>Decklists</h2>
+		<ul>
+			<% @user.decklists.each do |post| %>
+				<li><%= link_to post.title, :controller => "posts", :action => post.id %>
+				| <%=h post.created_at.to_date %></li>
+			<% end %>
+		</ul>
+		<%= "<p>No decklists</p>" if @user.decklists.empty? %>
+	</div>
+	
+	<div class="post_section">
+		<h2>Articles</h2>
+		<ul>
+			<% @user.articles.each do |post| %>
+				<li><%= link_to post.title, :controller => "posts", :action => post.id %>
+				| <%=h post.created_at.to_date %></li>
+			<% end %>
+		</ul>
+		<%= "<p>No articles</p>" if @user.articles.empty? %>
+	</div>
+	
+	<div class="post_section">
+		<h2>Tournament Reports</h2>
+		<ul>
+			<% @user.tournament_reports.each do |post| %>
+				<li><%= link_to post.title, :controller => "posts", :action => post.id %>
+				| <%=h post.created_at.to_date %></li>
+			<% end %>
+		</ul>
+		<%= "<p>No tournament reports</p>" if @user.tournament_reports.empty? %>
+	</div>
+	
+	<div class="post_section">
+		<h2>Blog Posts</h2>
+		<ul>
+			<% @user.blog_posts.each do |post| %>
+				<li><%= link_to post.title, :controller => "posts", :action => post.id %>
+				| <%=h post.created_at.to_date %></li>
+			<% end %>
+		</ul>
+		<%= "<p>No blog posts</p>" if @user.blog_posts.empty? %>
+	</div>
+	
+	<h2>Comments</h2>
+	<p>Probably put comments here, like a Facebook wall</p>
+</div>
+
+
+

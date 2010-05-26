@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/s_terron/swccgonline/!svn/ver/47/trunk/config
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/s_terron/swccgonline/!svn/ver/47/trunk/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/s_terron/swccgonline/!svn/ver/8/trunk/config/database.yml
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/s_terron/swccgonline/!svn/ver/5/trunk/config/boot.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/s_terron/swccgonline/!svn/ver/25/trunk/config/environment.rb
+END
+deploy.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/s_terron/swccgonline/!svn/ver/14/trunk/config/deploy.rb
+END

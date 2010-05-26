@@ -1,0 +1,55 @@
+9
+
+dir
+51
+https://terron@secure2.svnrepository.com/s_terron/swccgonline/trunk/vendor/plugins
+https://terron@secure2.svnrepository.com/s_terron/swccgonline
+
+
+
+2009-09-09T11:51:56.712280Z
+39
+terron
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ab49275e-8393-4082-8901-0c1467a10159
+
+will_paginate
+dir
+
+auto_complete_jquery
+dir
+
+paperclip
+dir
+
+restful_authentication
+dir
+
+jrails
+dir
+
+acts_as_taggable_on_steroids
+dir
+
+white_list
+dir
+
+ajaxful-rating
+dir
+
+jquery_edit_in_place
+dir
+

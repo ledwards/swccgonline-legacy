@@ -1,0 +1,39 @@
+<div id="container">
+
+</div>
+
+<div class="center">
+
+	<div class="cards">
+		<table class="card-database">
+		  <tr>
+		    <th>Title</th>
+		    <th>Front</th>
+		    <th>Lore</th>
+		    <th>Gametext</th>
+		  </tr>
+
+		<%= will_paginate @cards %>
+
+		<% for card in @cards %>
+		  <% begin %>
+		    <tr class="card-entry">
+		      <td class="card-title"><%= card.uniqueness %><%= card.title %></td>
+		      <td><%= image_tag card.image_front_url, :alt => "[x]" %></td>
+		      <td><p><%= card.lore %></p></td>
+		      <td><p><%= card.gametext %></p></td>
+	     
+		    </tr>
+		  <% rescue %>
+		    <td>ERROR loading card.<td>
+		  <% end %>
+		<% end %>
+		</table>
+
+		<%= will_paginate @cards %>
+
+		<br />
+
+		<%= link_to 'New card', new_card_path %>
+	</div>
+</div>

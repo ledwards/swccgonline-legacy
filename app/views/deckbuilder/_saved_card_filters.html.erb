@@ -1,0 +1,11 @@
+<div id="saved_card_filters" class="card_filter_box">
+  <ul id="saved_card_filters_list">
+		<% if @saved_card_filters.empty? %>
+	  	<li>
+				You do not have any saved filters. Create a new filter below to start filtering your search results.
+			</li>
+		<% else %>
+    	<%= render :partial => "saved_card_filter", :collection => saved_card_filters.collect { |f| CardFilter.find(f) } %>
+	  <% end %>
+	  <ul>
+</div>

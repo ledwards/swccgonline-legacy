@@ -1,0 +1,63 @@
+<div id="new">
+	New here?
+	<%= link_to "Create an account", "#", { :onclick => 'Boxy.load("/signup", {modal: true});' } %>
+</div>
+
+	<h1 class="hidden"><a href="http://www.swccgonline.com">SWCCG Online</a></h1>
+	<img src="/images/logo_big.png" alt="SWCCG Online" id="logo" /> 
+
+<div id="login">
+
+	<div class="errors" id="login_errors">
+		<ul>
+			<li><%= flash[:error] %></li>
+		<ul>
+	</div>
+	
+	<div class="notice">
+		<p><%= flash[:notice] %></p>
+	</div>
+
+  <% form_tag session_path do %>
+    
+	<%= label_tag 'Username' %>
+	<%= text_field_tag 'login', nil, :class => 'field', :id => 'username',
+		:value => "USERNAME",
+		:onblur => "if(this.value=='') this.value='USERNAME';",
+		:onfocus => "if(this.value==this.defaultValue) this.value='';",
+		:autocomplete =>"off" %>
+    
+	<%= label_tag 'Password' %>
+    <%= password_field_tag 'password', nil, :class => 'field', :id => 'password',
+		:value => "PASSWORD",	
+		:onblur => "if(this.value=='') this.value='PASSWORD';",
+		:onfocus => "if(this.value==this.defaultValue) this.value='';",
+		:autocomplete =>"off" %>
+
+	<%= label_tag 'Submit' %>
+    <%= submit_tag 'Login', :class => 'button' %>
+	
+	<!-- Uncomment this if you want this functionality
+	<p><%= label_tag 'remember_me', 'Remember me' %>
+	<%= check_box_tag 'remember_me', '1', @remember_me %></p>
+	-->
+
+  <% end %>
+</div>
+
+<div id="planet"></div>
+
+<div id="sun"></div>
+
+<script type='text/javascript'>
+$(document).ready(function() {
+
+	$(function() {
+	  $('#new').boxy();
+	});
+
+});
+</script>
+
+<%= setup_modal_blanket %>
+<%= create_modal "\#reset_password", "Reset Password", @modal_body, "[Cancel]" %>

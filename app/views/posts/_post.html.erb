@@ -1,0 +1,6 @@
+<li class = "post">
+	<%= link_to post.title, :controller => @controller_name, :action => "show", :id => post.id %>
+	by <%= link_to post.user.login, :controller => "profiles", :action => post.user.login %>
+	on <%=h post.created_at.to_date %>
+	| <%=h post.rating_average %>/5.0
+</li>

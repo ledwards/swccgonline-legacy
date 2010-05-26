@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/s_terron/swccgonline/!svn/ver/36/trunk/script
+END
+import_card_data_dark.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/s_terron/swccgonline/!svn/ver/36/trunk/script/import_card_data_dark.rb
+END
+darkside.cdf
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/s_terron/swccgonline/!svn/ver/1/trunk/script/darkside.cdf
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/s_terron/swccgonline/!svn/ver/1/trunk/script/console
+END
+import_card_data_light.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/s_terron/swccgonline/!svn/ver/36/trunk/script/import_card_data_light.rb
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/s_terron/swccgonline/!svn/ver/1/trunk/script/server
+END
+lightside.cdf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/s_terron/swccgonline/!svn/ver/1/trunk/script/lightside.cdf
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/s_terron/swccgonline/!svn/ver/1/trunk/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/s_terron/swccgonline/!svn/ver/1/trunk/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/s_terron/swccgonline/!svn/ver/1/trunk/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/s_terron/swccgonline/!svn/ver/1/trunk/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/s_terron/swccgonline/!svn/ver/1/trunk/script/generate
+END
+destroy_card_data.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/s_terron/swccgonline/!svn/ver/36/trunk/script/destroy_card_data.rb
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/s_terron/swccgonline/!svn/ver/1/trunk/script/plugin
+END

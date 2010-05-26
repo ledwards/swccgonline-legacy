@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/s_terron/swccgonline/!svn/ver/40/trunk/app/views/blogs
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/s_terron/swccgonline/!svn/ver/38/trunk/app/views/blogs/index.html.erb
+END
+_blog_listing.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/s_terron/swccgonline/!svn/ver/37/trunk/app/views/blogs/_blog_listing.html.erb
+END
+_blog_item.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/s_terron/swccgonline/!svn/ver/38/trunk/app/views/blogs/_blog_item.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/s_terron/swccgonline/!svn/ver/38/trunk/app/views/blogs/show.html.erb
+END

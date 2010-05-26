@@ -1,0 +1,16 @@
+<h1><%= @deck.title %></h1>
+
+<div id="table">
+  <%= render(:partial => "card" , :collection => @deck.get_cards) -%>
+  <div id="test_pile" class="pile"></div>
+</div>
+
+<script type="text/javascript">
+
+  Droppables.add('test_pile', { 
+    accept: 'game-card',
+    hoverclass: 'hover',
+    onDrop: function() { $('test_pile').highlight(); $('test_pile').setStyle({zIndex:'-1'}); }
+  });
+
+</script>

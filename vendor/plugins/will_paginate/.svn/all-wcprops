@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate
+END
+will_paginate.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/will_paginate.gemspec
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/LICENSE
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/README.rdoc
+END
+.manifest
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/.manifest
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/init.rb
+END
+CHANGELOG.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/s_terron/swccgonline/!svn/ver/7/trunk/vendor/plugins/will_paginate/CHANGELOG.rdoc
+END

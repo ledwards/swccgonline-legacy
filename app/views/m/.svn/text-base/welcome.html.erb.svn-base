@@ -1,0 +1,27 @@
+<div id="graphic">
+	<%= image_tag "/images/welcome.gif" %>
+</div>
+<div id="notice">
+	<p><%= flash[:notice] %></p>
+</div>
+<div class="container">
+	<div class="left">
+		<%= image_tag "/images/joinme.png" %>
+	</div>
+
+	<div class="right">
+		<% if !@user.active? %>
+			<p>An e-mail has been sent to <%= link_to @user.email, "mailto:#{@user.email}" %>.</p>
+			<br />
+			<p class="important">You will not be able to log in until you activate your account.</p>
+			<br />
+			<p>If you need another activation e-mail, <%= link_to "click here", :controller => "users", :action => "resend_activation_code", :id => @user.id %>.</p>
+		<% else %>
+			<p>Thanks for activating. You can <%= link_to "log in" %> now.</p>
+			<br />
+			<p>You can edit your account information <%= link_to "here", :controller => "settings" %></p>
+		<% end %>
+	</div>
+</div>
+
+<%= javascript_tag "$('div.left, div.right').corner();" %>

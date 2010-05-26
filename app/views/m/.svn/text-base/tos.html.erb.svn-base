@@ -1,0 +1,19 @@
+<div id="graphic">
+	<%= image_tag "/images/tos.gif" %>
+</div>
+<div id="notice">
+	<p><%= flash[:notice] %></p>
+</div>
+<div class="container">
+	<div class="left">
+		<%= image_tag "/images/darkdeal.png" %>
+	</div>
+
+	<div class="right">
+		<h3>Terms of Service</h3>
+		<br />
+		<%= render :partial => "tos" %>
+	</div>
+</div>
+
+<%= javascript_tag "$('div.left, div.right').corner();" %>

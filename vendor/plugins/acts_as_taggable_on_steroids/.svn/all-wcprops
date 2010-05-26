@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/init.rb
+END
+CHANGELOG
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/CHANGELOG
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/MIT-LICENSE
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/README
+END
+acts_as_taggable_on_steroids.gemspec
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/s_terron/swccgonline/!svn/ver/20/trunk/vendor/plugins/acts_as_taggable_on_steroids/acts_as_taggable_on_steroids.gemspec
+END

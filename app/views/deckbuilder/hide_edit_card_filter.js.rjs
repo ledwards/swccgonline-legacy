@@ -1,0 +1,4 @@
+page.remove("edit_card_filter_hide_link_"+@card_filter.id.to_s)
+page.visual_effect(:blind_up, "edit_card_filter_items_"+@card_filter.id.to_s, :duration => 0.5)
+page.insert_html(:bottom, "card_filter_edit_link_container_"+@card_filter.id.to_s, :partial => "card_filter_edit_link", :object => @card_filter)
+page.delay(0.5) { page.remove("edit_card_filter_items_"+@card_filter.id.to_s) }

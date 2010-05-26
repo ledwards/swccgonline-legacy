@@ -1,0 +1,4 @@
+<div id="side_deck_contents">
+	<%= render :partial => "decklist_item", :collection => side_deck.find_all_by_tab("side_deck") %>
+	<p class="total">Subtotal (<%= side_deck.quantity_by_tab("side_deck") %>)</p>
+</div>

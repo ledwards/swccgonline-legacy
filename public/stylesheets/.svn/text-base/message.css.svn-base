@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin:0; padding:0; }
+
+p { font: 24px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; text-decoration: none; color: #ffffff; }
+p.important { color: #ff2c2c; }
+a { font: 24px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; text-decoration: underline; }
+a:hover { color: #ffde71; text-decoration: none; }
+img { border: none; border: 20px; }
+body { background: #1b1b1b; padding-top: 4px;}
+h1,h2 { font: 32px/24px Arial, Helvetica, sans-serif; color: #ffde71; letter-spacing: -1px; font-weight: 700; margin: 50px; text-align: center;}
+
+div.right { float: right; width: 360px; background: #434343; text-align: left; padding: 10px; }
+div.left { float: left; width: 352px; background: #434343; padding: 10px; }
+div.container { margin: 0 auto; width: 800px; background: #1b1b1b; height: 526px;}
+
+div#graphic { width: auto; height: 55px; text-align: center; position: relative; margin: 0 298px 0 298px; padding: 10px 0 0 10px; }
+div#notice { margin: 0 auto; text-align: center; margin-top: 10px; margin-bottom: 5px; height: 40px; }
+
+div.right li { margin-left: 35px; margin-top: 5px; margin-bottom: 5px; font: 16px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; text-decoration: none; color: #ffffff; }
+div.right li a { font: 16px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; color: #ffffff; text-decoration: underline; }
+div.right li.important { color: #ff2c2c; }
+h3 { font: 24px 'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif; text-decoration: none; color: #ffde71; margin-bottom: -20px; }
+
+div.hidden div.left, div.hidden div.left { background: #1b1b1b; }

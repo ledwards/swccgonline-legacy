@@ -1,0 +1,20 @@
+<li class="blog_listing">
+	<div class="blog_listing_container">
+		<div class="blog_listing_photo">
+			<%= link_to image_tag(user.photo.url(:small)), :controller => "blogs", :action => user.login %>
+		</div>
+		<div class="blog_listing_info">
+			<h2>
+				<% if user != @current_user %>
+					<%= link_to user.blog_title, :controller => "blogs", :action => user.login %>
+				<% else %>
+					<%= link_to "Your Blog", :controller => "blogs", :action => user.login %>
+				<% end %>
+			</h2>
+			<p>Last post: <%= link_to user.last_blog_post.title, :controller => "blog_posts", :action => "show", :id => user.last_blog_post.id %></p>
+			<p>by <%= link_to user.display_name, :controller => :users, :action => user.login %> on <%= user.blog_posts.last.created_at.to_date %></p>
+			<p class="blog_entry_body"><%= user.last_blog_post.abbrv_body(170) %></p>
+			<p class="comments_rating"><%= link_to user.last_blog_post.comments.length.to_s + " Comments", :controller => "blog_posts", :action => "show", :id => user.last_blog_post.id %> (Rating: <%= user.last_blog_post.rating_average %>/5)</p>
+		</div>
+	</div>
+</li>

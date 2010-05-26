@@ -1,0 +1,9 @@
+page.visual_effect(:fade, "side_graphic", :duration => 0.5)
+
+page.delay(0.5) {
+  page.replace("side_graphic", image_tag("/images/#{@side.downcase}side.png", :id => "side_graphic"))
+  page.hide("side_graphic")
+  page.visual_effect(:appear, "side_graphic", :duration => 0.5)
+}
+
+page.replace("search_results", :partial => "search_results")

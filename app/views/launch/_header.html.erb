@@ -1,0 +1,27 @@
+<div id="header">
+  
+  <div id="logo">
+      <%= link_to "", :controller => "launch" -%>
+  </div>
+  
+  <div id="nav">
+    <ul>
+      <li id="cards">
+        <%= link_to "Cards", :controller => "cards" -%>
+      </li>
+      <li id="deckbuilder">
+        <%= link_to "Deckbuilder", :controller => "deckbuilder" -%>
+      </li>
+      <li id="deckbox">
+        <%= link_to "Deckbox", :controller => "deckbox" -%>
+      </li>
+      <li id="play">
+        <%= link_to "Play", :controller => "game", :action => "play" -%>
+      </li>
+      <li id="community">
+        <%= link_to "Community", :controller => "community" -%>
+      </li>
+    </ul>
+  </div>
+
+</div>

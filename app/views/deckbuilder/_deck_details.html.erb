@@ -1,0 +1,19 @@
+<% form_remote_for(@deck, :url => {:controller => "deckbuilder", :action => "save_deck"}, :live_validations => true) do |f| %>
+	<%= f.error_messages %>
+	<p>
+    <%= f.label :title %>
+    <%= f.text_field :title, :size => 33 %>
+  </p>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description, :cols => 29 %>
+  </p>
+	<div class="decklist_button">
+    <%= f.submit 'Save', :class => "button" %>
+  </div>
+<% end %>
+<div class="decklist_button">
+	<% form_remote_tag :url => { :controller => "deckbuilder", :action => "clear_decklist" } do %>
+		<%= submit_tag "Clear" , :class => "button" %>
+	<% end %>
+</div>

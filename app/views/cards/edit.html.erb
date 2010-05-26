@@ -1,0 +1,47 @@
+<h1>Editing card</h1>
+
+<%= error_messages_for :card %>
+
+<% form_for(@card) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Image Front URL</b><br />
+    <%= f.text_field :image_front_url %>
+  </p>
+  
+  <p>
+    <b>Image Back URL</b><br />
+    <%= f.text_field :image_back_url %>
+  </p>
+
+  <p>
+    <b>Lore</b><br />
+    <%= f.text_area :lore %>
+  </p>
+
+  <p>
+    <b>Game Text</b><br />
+    <%= f.text_area :gametext %>
+  </p>
+
+  <p>
+    <b>Side</b><br />
+    <%= f.text_field :side %>
+  </p>
+
+  <p>
+    <b>Expansion Set</b><br />
+    <%= f.text_field :expansion %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @card %> |
+<%= link_to 'Back', cards_path %>

@@ -1,0 +1,32 @@
+<div id="container">
+	<div class="left" id="contributions">
+		<h1>All Contributions</h1>
+		<ul>
+			<li><%= link_to "Articles", :controller => "articles" %> (<%= @number_of_articles %>) <%= link_to "[+]", :controller => "articles", :action => "new" %></li>
+			<li><%= link_to "Decklists", :controller => "decklists" %> (<%= @number_of_decklists %>)  <%= link_to "[+]", :controller => "decklists", :action => "new" %></li>
+			<li><%= link_to "Tournament Reports", :controller => "tournament_reports" %> (<%= @number_of_tournament_reports %>)  <%= link_to "[+]", :controller => "tournament_reports", :action => "new" %></li>
+			<li><%= link_to "Blogs", :controller => "blogs" %> (<%= @number_of_blogs %> blogs with <%= @number_of_blog_posts %> total entries)  <%= link_to "[+]", :controller => "blog_posts", :action => "new" %></li>
+		</ul>
+	</div>
+	<div class="right">
+		<h1>Top Contributions</h1>
+		
+		<% PostType.all.each do |post_type| %>
+			<div id=<%= post_type.singular_controller_name %> class="posts">
+				<h3><%= post_type.name.capitalize %> <%= link_to "[+]", :controller => post_type.controller_name, :action => "new" %></h3>
+				<ol>
+					<% @top[post_type.controller_name.intern].each do |post| %>
+						<li>
+							<%= link_to post.title, :controller => "posts", :action => post.id %>
+							<%=h post.rating_average %>/5.0<br />
+							by <%= link_to post.user_name, :controller => "users", :action => post.user.login %>
+						</li>
+					<% end %>
+				</ol>
+			</div>
+		<% end %>
+		
+</div>
+
+<div class="center">
+</div>

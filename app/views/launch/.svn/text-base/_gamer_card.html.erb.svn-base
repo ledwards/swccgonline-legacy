@@ -1,0 +1,9 @@
+<div class="gamer-card" id="my_gamer_card">
+  <%= image_tag "/images/newbie.jpg" %>
+  <p>
+    <strong>RANK:</strong> 1<br />
+    <strong>RATING:</strong> *****<br />
+    <a href="#">&#8226; Invite to Game</a><br />
+    <a href="#">&#8226; View Full Profile</a>
+  </p>
+</div>
