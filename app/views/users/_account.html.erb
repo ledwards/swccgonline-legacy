@@ -13,7 +13,7 @@
 	
 	<div class="settings_right">
 		<div class="settings_form" id="email_form">
-			<% remote_form_for @user do |f| -%>
+			<%= form_for @user, :remote => true do |f| -%>
 		
 		    	<%= f.text_field 'email', :class => 'field', :id => 'email',
 				:value => @user.email,
@@ -25,7 +25,7 @@
 			<% end %>
 		</div>
 		<div class="settings_form" id="password_form">
-	 		<% remote_form_for @user do |f| -%>
+	 		<%= form_for @user, :remote => true do |f| -%>
 
 		    	<%= f.password_field 'password', :class => 'field', :id => 'password',
 				:value => "PASSWORD",

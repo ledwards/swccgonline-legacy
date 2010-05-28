@@ -1,5 +1,5 @@
 <div class = "search-result-wrapper">
-  <% form_remote_tag :url => { :action => :add_to_decklist, :id => search_result } do %>
+  <%= form_tag :url => { :action => :add_to_decklist, :id => search_result }, :remote => true do %>
   
     <div id = "<%= search_result.id.to_s -%>" class = "results-thumbnail">
       <%= image_tag search_result.image_front_url -%>

@@ -4,8 +4,8 @@
  <div class="decklist_item">
 <% end %>
 
-<%= link_to_remote image_tag("/images/arrow_right.png"), :url => {:controller => "deckbuilder", :action => "move_between_tabs", :card_id => main_deck_item.card.id, :destination => "sixtyfirst_cards" } -%>
-<%= link_to_remote image_tag("/images/filters_delete.png"), :url => {:controller => "deckbuilder", :action => "remove_from_decklist", :id => main_deck_item.card.id } -%>
+<%= link_to image_tag("/images/arrow_right.png"), :url => {:controller => "deckbuilder", :action => "move_between_tabs", :card_id => main_deck_item.card.id, :destination => "sixtyfirst_cards" }, :remote => true -%>
+<%= link_to image_tag("/images/filters_delete.png"), :url => {:controller => "deckbuilder", :action => "remove_from_decklist", :id => main_deck_item.card.id }, :remote => true -%>
 
 <%= text_field_tag main_deck_item.id, main_deck_item.quantity, :size => 2, :maxlength => 2,
 		:onchange => "$.post('/deckbuilder/change_deck_item_quantity', { 

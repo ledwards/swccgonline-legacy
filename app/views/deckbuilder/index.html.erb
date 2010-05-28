@@ -5,7 +5,7 @@
 		<div class="side">
 			<%= image_tag "/images/#{@side.downcase}side.png", :id => "side_graphic" %>
 			<p>
-			 <%= link_to_remote "[Change sides]", :url => {:controller => "deckbuilder", :action => "change_sides"} %>
+			 <%= link_to "[Change sides]", :url => {:controller => "deckbuilder", :action => "change_sides"}, :remote => true %>
 			</p>
 		</div>
     <div class="card_filters">
@@ -39,7 +39,7 @@
 </div>
 <div class="center">
 	<div class="search-box">
-	  <% form_remote_tag :url => { :action => "search" } do %>
+	  <%= form_tag :url => { :action => "search" }, :remote => true do %>
 	    <%= text_field :card, :title, {:size => 50} %>
 	    <%= submit_tag "Search", :class => "button" %>
 	  <% end %>

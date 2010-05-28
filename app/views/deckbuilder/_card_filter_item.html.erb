@@ -2,7 +2,7 @@
   <% new_or_existing = card_filter_item.new_record? ? 'new' : 'existing' %>
   <% prefix = "card_filter[#{new_or_existing}_card_filter_item_attributes][]" %>
   
-  <% fields_for prefix, card_filter_item do |card_filter_item_form| -%>
+  <%= form_for prefix, card_filter_item, :remote => true do |card_filter_item_form| -%>
   
     <p>
       <label>Category</label>

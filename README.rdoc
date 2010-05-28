@@ -1,0 +1,24 @@
+== SWCCG Online
+
+SWCCG Online is a community site for the Star Wars: Customizable Card Game, formerly owned by Decipher Inc., and currently maintained by the
+SWCCG Player's Committee. The site allows users to share decks, articles and tournament reports, maintain blogs, create decks, and find
+opponents to play a game against online over a desktop client. The site is currently under active development by Lee Edwards.
+
+= Current working features
+ * Deckbuilder
+ * Articles, Tournament Reports, and Decklists
+ * Ratings and comments on user-submitted content
+ * Blogs
+ * Account management
+
+= TODO:
+ * Card database
+ * Matchmaking system
+ * Player ratings
+ * Test coverage
+ * Complete upgrade to Rails 3.0.0 including unobtrusive Javascript
+
+= Further Resources
+ * http://www.swccgonline.com
+ * http://swccgonline.tumblr.com
+ * http://vimeo.com/6217401

@@ -1,3 +1,0 @@
-module CardsHelper
-
-end

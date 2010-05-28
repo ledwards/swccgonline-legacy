@@ -3,7 +3,7 @@
 <%= error_messages_for :card %>
 
 <div class="card">
-  <% form_for(@card) do |f| %>
+  <%= form_for(@card) do |f| %>
     <p>
       <b>Title</b><br />
       <%= f.text_field :title %>

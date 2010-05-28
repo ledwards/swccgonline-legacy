@@ -49,7 +49,7 @@ class User < ActiveRecord::Base
     token = ""
     1.upto(30) { |i| token << chars[rand(chars.size-1)] }
     self.update_attributes(:reset_password_token => token)
-    UserMailer.deliver_reset_password(self, token, ip_address)
+    UserMailer.reset_password(self, token, ip_address).deliver
   end
 
   # Activates the user in the database.

@@ -1,4 +1,5 @@
-<%= link_to_remote "[Hide]",
+<%= link_to "[Hide]",
 	:url => { :action => "hide_edit_card_filter", :id => card_filter_hide_link.id },
 	:html => { :id => "edit_card_filter_hide_link_"+card_filter_hide_link.id.to_s },
-	:before => "this.style.display='none'" %>
+	:before => "this.style.display='none'",
+	:remote => true %>

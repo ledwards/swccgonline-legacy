@@ -1,7 +1,7 @@
 <div class="center" id="new_post">
 	<h1>New <%= @post.post_type.name %></h1>
 	<%= image_tag "/images/new_#{@post.post_type_name_with_underscores}.png" %>
-	<% form_for(@post, :live_validations => true) do |f| %>
+	<%= form_for(@post, :live_validations => true) do |f| %>
 		<%= f.error_messages %>
 	  <p>
 	    <%= f.label :title %>

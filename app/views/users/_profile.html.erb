@@ -15,7 +15,7 @@
 	
 	<div class="settings_right">
 		<div class="about_me_form">
-			<% form_for @user, :html => { :multipart => true } do |f| -%>
+			<%= form_for @user, :html => { :multipart => true } do |f| -%>
 
 			    <%= f.text_field 'location', :class => 'field', :id => 'location',
 				:value => @user.location,

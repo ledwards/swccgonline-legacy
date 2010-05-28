@@ -89,7 +89,7 @@ class UsersController < ApplicationController
   def resend_activation_code
     @user = User.find(params[:id])
     if !@user.active?
-      UserMailer.deliver_signup_notification(@user)
+      UserMailer.signup_notification(@user).deliver
       flash[:notice] = "Notification sent."
     else
       flash[:notice] = "Account already active."

@@ -1,6 +1,6 @@
 <li id="<%= 'card_filter_'+saved_card_filter.id.to_s %>">
 	<p>
-	  <%= link_to_remote image_tag("/images/filters_apply.png"), :url => { :action => "apply_card_filter", :id => saved_card_filter.id } %>
+	  <%= link_to image_tag("/images/filters_apply.png"), :url => { :action => "apply_card_filter", :id => saved_card_filter.id }, :remote => true %>
 	  &nbsp;<%= saved_card_filter.name %>
 		<span id="<%= 'card_filter_edit_link_container_'+saved_card_filter.id.to_s %>" class="card_filter_edit_link_container">
 			<%= render :partial => "card_filter_edit_link", :object => saved_card_filter %>

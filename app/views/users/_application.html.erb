@@ -6,7 +6,7 @@
 		</div>
 	</div>
 	<div class="settings_right">
-	  <% remote_form_for @user do |f| -%>
+	  <%= form_for @user, :remote => true do |f| -%>
 
 		<div class="remember_me">
 			<div class="checkbox"><%= f.check_box 'remember_me' %></div>

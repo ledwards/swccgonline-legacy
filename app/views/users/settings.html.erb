@@ -2,9 +2,9 @@
 	<div class="left">
 		<h1>Settings</h1>
 		<ul id="left_nav">
-			<li><%= link_to_remote "Account", :url => {:controller => "change_settings_panel", :settings_panel => "account"} %></li>
-			<li><%= link_to_remote "Profile", :url => {:controller => "change_settings_panel", :settings_panel => "profile"} %></li>
-			<li><%= link_to_remote "Application Settings", :url => {:controller => "change_settings_panel", :settings_panel => "application"} %></li>
+			<li><%= link_to "Account", :url => {:controller => "change_settings_panel", :settings_panel => "account"}, :remote => true %></li>
+			<li><%= link_to "Profile", :url => {:controller => "change_settings_panel", :settings_panel => "profile"}, :remote => true %></li>
+			<li><%= link_to "Application Settings", :url => {:controller => "change_settings_panel", :settings_panel => "application"}, :remote => true %></li>
 		</ul>
 	</div>
 	<div class="errors" id="settings_errors">

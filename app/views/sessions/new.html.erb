@@ -18,7 +18,7 @@
 		<p><%= flash[:notice] %></p>
 	</div>
 
-  <% form_tag session_path do %>
+  <%= form_tag session_path do %>
     
 	<%= label_tag 'Username' %>
 	<%= text_field_tag 'login', nil, :class => 'field', :id => 'username',
